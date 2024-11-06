@@ -12,7 +12,6 @@ export default function About() {
       <TeamSection />
       <BrandFlow />
       <BeliveIN />
-      {/* <Testimonials /> */}
     </div>
   );
 }
