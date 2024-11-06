@@ -1,0 +1,208 @@
+.teamSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 10px;
+}
+
+.circleContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/frame.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Background wave styles */
+.topWave {
+  position: absolute;
+  top: 100px;
+  left: 155px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bottomWave {
+  position: absolute;
+  bottom: -120px;
+  left: 25%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Center the text within the circle */
+.textContainer {
+  position: absolute;
+  z-index: 1;
+}
+
+.headingSecondary {
+  font-size: 1.2em;
+  color: #999;
+  margin: 0;
+}
+
+.headingPrimary {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.teamMember {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.teamMember img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Position each team member around the circle */
+.position1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-100%);
+}
+
+.position2 {
+  top: 25%;
+  left: 85%;
+  transform: translate(-105%, -50%);
+}
+
+.position3 {
+  top: 75%;
+  left: 85%;
+  transform: translate(-100%, -50%);
+}
+
+.position4 {
+  top: 100%;
+  left: 50%;
+  transform: translate(0%, -90%);
+}
+
+.position5 {
+  top: 75%;
+  left: 15%;
+  transform: translate(0%, -20%);
+}
+
+.position6 {
+  top: 25%;
+  left: 15%;
+  transform: translate(-50%, 0%);
+}
+/* Adjust name container styles for different positions */
+.nameContainer {
+  display: none; /* Hide by default */
+  position: absolute;
+  padding: 5px 10px;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  z-index: 1;
+  width: 120px; /* Set a width for the name container */
+}
+
+/* Display name container on hover */
+.teamMember:hover .nameContainer {
+  display: block; /* Show name container on hover */
+  z-index: 1;
+}
+
+.position1 .nameContainer {
+  top: 75%;
+  left: 50%; /* Center horizontally for position 1 */
+  transform: translate(-50%, 0); /* Adjust position */
+}
+
+.position2 .nameContainer {
+  top: 105%;
+  left: 59%;
+  transform: translate(-50%, -150%); /* Position above */
+}
+
+.position3 .nameContainer {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -150%); /* Position above */
+}
+
+.position4 .nameContainer {
+  top: 0; /* Position below for position 4 */
+  left: 50%; /* Center horizontally for position 4 */
+  transform: translate(-50%, 0); /* Adjust position */
+}
+
+.position5 .nameContainer {
+  top: 112%;
+  left: 50%;
+  transform: translate(-50%, -150%); /* Position above */
+}
+
+.position6 .nameContainer {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -150%); /* Position above */
+}
+
+/* Responsive design */
+@media only screen and (min-width: 600px) and (max-width: 1062px) {
+  .topWave {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+  }
+  .bottomWave {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0.2;
+  }
+  .circleContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .teamMember {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .topWave {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+  }
+  .bottomWave {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0.2;
+  }
+  .circleContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .teamMember {
+    width: 100px;
+    height: 100px;
+  }
+}

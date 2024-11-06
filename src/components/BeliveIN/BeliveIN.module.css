@@ -1,0 +1,58 @@
+.container {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of the viewport */
+  padding: 20px; /* Add some padding if needed */
+  text-align: center; /* Center the text */
+}
+.container p {
+  margin: 2px;
+}
+.heading {
+  font-size: 8rem; /* Adjust based on your design */
+  font-weight: bold; /* Makes the heading bold */
+}
+
+.smallText {
+  font-size: 5rem; /* Make the text smaller */
+  font-weight: normal; /* Adjust the weight if needed */
+  font-style: italic;
+  font-family: Georgia;
+}
+
+.description {
+  font-size: 1.2rem; /* Adjust based on your design */
+  margin-top: 10px; /* Space between heading and description */
+  justify-content: center;
+  display: flex;
+}
+.description p {
+  width: 70%;
+}
+
+.headingw {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 600px) and (max-width: 920px) {
+  .heading {
+    font-size: 6rem; /* Adjust based on your design */
+    font-weight: bold; /* Makes the heading bold */
+  }
+  .smallText {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 4rem; /* Adjust based on your design */
+    font-weight: bold; /* Makes the heading bold */
+  }
+  .smallText {
+    font-size: 3rem;
+  }
+}

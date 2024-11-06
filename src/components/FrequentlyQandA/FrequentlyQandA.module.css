@@ -1,0 +1,147 @@
+.FrequentlyQandAContainer {
+  width: 100%;
+}
+.FrequentlyQandAContainer2 {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.FreqContainerContain {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.FreqQandA {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid gray;
+  padding: 20px;
+  position: relative; /* for easy positioning of elements */
+  cursor: pointer;
+  width: 150px;
+  min-width: 150px;
+  height: 200px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.FreqQandA p {
+  font-size: 0.9rem;
+}
+.FreqQandA h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Initially hide the answer */
+.answerText {
+  display: none;
+}
+
+/* Show image and question text by default */
+.questionImage,
+.questionText {
+  display: block;
+}
+
+/* On hover, show answer and hide image/question */
+.FreqQandA:hover .questionImage,
+.FreqQandA:hover .questionText {
+  display: none;
+}
+
+.FreqQandA:hover .answerText {
+  display: block;
+}
+.answerText {
+  color: #fff;
+}
+
+.FreqContainerContain21 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+.FreqQandA img {
+  width: 30px;
+}
+
+/* Apply unique colors and rotation for each item */
+.FreqContainerContain21 .FreqQandA:nth-child(1):hover {
+  background-color: #9160ef;
+  transform: rotate(10deg);
+}
+
+.FreqContainerContain21 .FreqQandA:nth-child(2):hover {
+  background-color: #ffac06;
+  transform: rotate(-10deg);
+}
+
+.FreqContainerContain21 .FreqQandA:nth-child(3):hover {
+  background-color: #49ab4f;
+  transform: rotate(10deg);
+}
+
+.FreqContainerContain21 .FreqQandA:nth-child(4):hover {
+  background-color: #f16643;
+  transform: rotate(-10deg);
+}
+
+.FreqContainerContain21 .FreqQandA:nth-child(5):hover {
+  background-color: #4da2f1;
+  transform: rotate(10deg);
+}
+.FrequentlyQandAContainerText p {
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1069px) {
+  .FreqContainerContain21 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .answerText {
+    display: block;
+    color: #000000;
+    margin: 0;
+  }
+  .questionText {
+    margin: 0;
+  }
+  .FreqQandA {
+    gap: 6px;
+    padding: 10px;
+    height: 230px;
+    width: 180px;
+  }
+  .FreqQandA h2 {
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .FreqContainerContain21 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .answerText {
+    display: block;
+    color: #000000;
+    margin: 0;
+  }
+  .questionText {
+    margin: 0;
+  }
+  .FreqQandA {
+    gap: 6px;
+    padding: 10px;
+    height: 230px;
+    width: 180px;
+  }
+  .FreqQandA h2 {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,109 @@
+.howWork {
+  width: 100%;
+  height: 80vh;
+  background-color: #f9f7f1;
+}
+.howWorkh2 h2 {
+  font-size: 3rem;
+}
+
+.howWork2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.howWorkContent {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 3fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #e9e4e4;
+  padding-bottom: 10px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  height: 20vh;
+  margin: 0 3rem 0 3rem;
+}
+.howWorkContenttop:hover {
+  background-color: #f16643;
+}
+
+.howWorkcount,
+.howWorkName,
+.howWorkConten3t {
+  /* height: 20vh; */
+  display: flex;
+  align-items: flex-end;
+}
+
+.howWorkcount {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.howWorkName {
+  font-size: 2rem;
+}
+
+.howWorksymbal {
+  text-align: right;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+
+/* Image hover styles */
+.imagehover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 4; /* Place between .howWorkConten3t and .howWorksymbal */
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.howWorkContent:hover .imagehover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.imagehover img {
+  height: 121%;
+  width: auto;
+}
+
+.imagehover img {
+  height: 150%;
+  width: auto;
+  margin-top: -9vh;
+}
+@media only screen and (min-width: 600px) and (max-width: 1069px) {
+  .howWork {
+    height: auto;
+  }
+  .howWorkContent {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  .howWorksymbal {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .howWork {
+    height: auto;
+  }
+  .howWorkContent {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  .howWorksymbal {
+    display: none;
+  }
+}
