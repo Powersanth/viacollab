@@ -4,8 +4,15 @@
   grid-template-areas: "landText landImage";
   gap: 2rem;
   padding: 0 2rem 0 2rem;
-  /* height: 100vh; */
-  margin-top: 3rem;
+  background: linear-gradient(to right, #fefefe, #eaaa8a);
+}
+
+.landimages {
+  position: absolute;
+  top: 0;
+  z-index: 10; /* Ensure landimage is on top */
+  width: 100%;
+  height: 100%;
 }
 
 .textContent {
@@ -15,24 +22,27 @@
   justify-items: center;
 }
 
-.textContent div {
+.textContent2 {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  justify-content: center;
 }
+
 .imageContent {
   position: relative;
   grid-area: landImage;
   text-align: center;
+  z-index: 1; /* Keeps image content in the front */
 }
+
 .textContent h1 {
   font-size: 3rem;
-  color: #1e1e1e;
+  color: #000;
 }
 
 .textContent p {
   font-size: 1rem;
-  color: #555;
+  color: #313030;
   max-width: 450px;
   line-height: 1.6;
 }
@@ -41,7 +51,7 @@
   background-color: #6a2cf2;
   color: #fff;
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 30px;
   margin-top: 1.5rem;
   cursor: pointer;
@@ -53,179 +63,58 @@
   font-size: 1rem;
 }
 
-.contactButton span {
+.contactButtonspan {
   margin-left: 0.5rem;
+  background: #fff;
+  border-radius: 100%;
+  width: 35px;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
 }
-
+.contactButtonspan img {
+  width: 20px;
+}
 .heroImage {
   object-fit: cover;
   border-radius: 8px;
   position: relative;
   top: 4px;
+  width: 500px;
 }
-.imageContent :nth-child(1) {
-  margin-top: 15px;
-}
-
-.socialIcons {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 1rem;
-  margin-top: 2rem;
-  align-items: center;
+@media only screen and (min-width: 840px) and (max-width: 997px) {
+  .textContent h1 {
+    font-size: 2rem;
+  }
 }
 
-.socialIcons img {
-  width: 40px;
-  height: 40px;
-}
-
-.socialIcons1,
-.socialIcons2,
-.socialIcons3 {
-  display: flex;
-  width: 70%;
-}
-
-.socialIcons1 :nth-child(2) {
-  margin-top: 20px;
-  position: relative;
-  left: 60%;
-}
-.socialIcons1 :nth-child(1) img {
-  width: 50px;
-  height: 50px;
-}
-
-.socialIcons2 :nth-child(1) {
-  margin-top: 20px;
-  left: 20px;
-  position: relative;
-}
-
-.socialIcons2 :nth-child(2) {
-  position: relative;
-  left: 50%;
-}
-.socialIcons2 :nth-child(1) img {
-  width: 45px;
-  height: 45px;
-}
-.socialIcons2 :nth-child(2) img {
-  width: 30px;
-  height: 30px;
-}
-
-.socialIcons3 :nth-child(1) {
-  margin-top: -20px;
-}
-
-.socialIcons3 :nth-child(1) img {
-  width: 60px;
-  height: 60px;
-}
-
-.socialIcons3 :nth-child(2) {
-  position: relative;
-  left: 50%;
-}
-
-span {
-  background: #fff;
-  /* border: 1px solid red; */
-  width: 40px;
-  border-radius: 100%;
-  height: 40px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-span img {
-  width: 20px;
-  height: 20px;
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1069px) {
+@media (max-width: 839px) {
+  .textContent h1 {
+    font-size: 2rem;
+  }
   .heroContent {
-    position: relative;
     display: flex;
-    margin-top: 0;
-    padding: 0px;
-    margin: 10px;
+  }
+  .landimages {
+    position: relative;
   }
   .imageContent {
-    position: relative;
-    opacity: 0.3;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    opacity: 0.4;
   }
   .textContent {
     position: absolute;
-    z-index: 1;
-    height: 100%;
-    display: flex;
+    z-index: 99;
     justify-content: center;
     align-items: center;
-    width: 85%;
-    padding: 26px;
-  }
-  .heroImage {
-    width: 100%;
-  }
-  .textContent div {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  .heroContent {
-    position: relative;
-    display: flex;
-    margin-top: 0;
-  }
-  .imageContent {
-    position: relative;
-    opacity: 0.3;
-  }
-  .textContent {
-    position: absolute;
-    z-index: 1;
     height: 100%;
+    padding: 10px;
+  }
+  .heroContent {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   .heroImage {
-    width: 100%;
-  }
-  .textContent div {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .heroContent {
-    position: relative;
-    display: flex;
-  }
-  .imageContent {
-    position: relative;
-    opacity: 0.3;
-  }
-  .textContent {
-    position: absolute;
-    z-index: 1;
-  }
-  .heroImage {
-    width: 100%;
-  }
-  .textContent div {
     width: 100%;
   }
 }

@@ -1,3 +1,4 @@
+// Home.js
 import "../../App.css";
 import ConnectInFluencers from "../ConnectInFluencers/ConnectInFluencers";
 import LandingPage from "../LandingPage/LandingPage";
@@ -11,7 +12,7 @@ import WhyChooseUs from "../WhyChooseUs/WhyChooseUs";
 function Home() {
   return (
     <section className="hero">
-      <NavBar linkColor="#000" />
+      <NavBar linkColor="#000" gradientBackground={true} />
       <LandingPage />
       <ConnectInFluencers />
       <GrabOnly />

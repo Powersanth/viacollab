@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
                 <img src={feature.image} alt={feature.title} />
               </div>
               <div
-                data-aos="fade-left"
+                data-aos="fade-right"
                 data-aos-duration="2000"
                 className={`${styles.text}`}
               >

@@ -1,24 +1,114 @@
-/* NavBar.module.css */
-
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: static;
+  background: linear-gradient(to right, #fefefe, #eaaa8a);
+  padding: 20px;
 }
 
+.navbar img {
+  margin: 0;
+}
+.closeIcon {
+  display: none;
+}
 .navLinks {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  justify-content: flex-end;
+  margin: 0;
 }
 
 .navLinks a {
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease; /* Optional: Add a transition effect */
+  transition: color 0.3s ease;
 }
 
 .navLinks a:hover {
-  text-decoration: underline; /* Optional: Add underline on hover */
+  text-decoration: underline;
+}
+
+/* Burger Icon Styles */
+.burgerIcon {
+  display: none; /* Hide burger icon by default */
+  font-size: 30px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Close Icon for Full-Screen Menu */
+.closeIcon {
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+  z-index: 1100; /* Ensure it is above other elements */
+}
+
+/* Fullscreen Menu for Mobile */
+.navLinks {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Show the nav items as a full-screen menu when active */
+.navLinks.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #fefefe, #eaaa8a);
+  color: white; /* White text */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navLinks li {
+  margin: 1.5rem 0;
+}
+
+.navLinks a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .navLinks a {
+    color: #fff !important;
+  }
+  .closeIcon {
+    display: block;
+  }
+  .burgerIcon {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .navLinks {
+    display: none; /* Hide regular nav on mobile */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burgerIcon {
+    display: block; /* Show burger icon */
+  }
+
+  .navLinks.active {
+    display: flex; /* Show the full-screen nav */
+  }
 }

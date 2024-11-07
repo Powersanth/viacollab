@@ -43,18 +43,7 @@ export default function FrequentlyQandA() {
       answer:
         "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
     },
-    {
-      image: puzzle,
-      question: "How do I know if a campaign is successful?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
-    },
-    {
-      image: influencer,
-      question: "How does Viacollab match brands with influencers?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
-    },
+
     {
       image: prize1,
       question: "What types of influencers are available on Viacollab?",
@@ -82,7 +71,7 @@ export default function FrequentlyQandA() {
         </div>
         <div data-aos="fade-right" className={styles.FreqContainerContain}>
           <div className={styles.FreqContainerContain21}>
-            {QAndA?.slice(0, 5).map((res, index) => (
+            {QAndA?.slice(0, 4).map((res, index) => (
               <div key={index} className={styles.FreqQandA}>
                 <img
                   src={res.image}
@@ -96,7 +85,7 @@ export default function FrequentlyQandA() {
           </div>
           <div data-aos="fade-left" className={styles.FreqContainerContain2}>
             <div className={styles.FreqContainerContain21}>
-              {QAndA?.slice(5, 10).map((res, index) => (
+              {QAndA?.slice(4, 8).map((res, index) => (
                 <div key={index} className={styles.FreqQandA}>
                   <img
                     src={res.image}

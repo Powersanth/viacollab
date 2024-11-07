@@ -32,20 +32,26 @@ export default function LandingPage() {
     }
 
     const texts = [
-      "Viacollab",
-      "Viacollab",
-      "Viacollab",
-      "Viacollab",
-      "Viacollab",
-      "Viacollab",
-      "Viacollab",
-      "Viacollab",
+      "Instagram",
+      "Youtube",
+      "Facebook",
+      "JavaScript",
+      "React",
+      "Vue",
+      "NextJS",
+      "MongoDB",
+      "NodeJS",
+      "Babel",
+      "Jquery",
+      "ES6",
+      "GIT",
+      "GITHUB",
     ];
 
     const options = {
       radius: 300,
-      maxSpeed: "normal",
-      initSpeed: "normal",
+      maxSpeed: "fast",
+      initSpeed: "fast",
       keep: true,
     };
 
@@ -55,7 +61,7 @@ export default function LandingPage() {
   return (
     <div className={styles.heroContent}>
       <div className={styles.textContent}>
-        <div className={styles.textContent2}>
+        <div>
           <h1>Lorem ipsum dolor sit amet ld diam cursus ot</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur. facilisi id euismod felis
@@ -89,7 +95,6 @@ export default function LandingPage() {
 
           {/* Add more images as needed */}
         </div>
-
         <div data-aos="fade-up-right" className={styles.landimages}>
           <img
             src={landingImage}

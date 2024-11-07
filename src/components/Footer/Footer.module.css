@@ -98,8 +98,18 @@
   flex-direction: column;
   align-items: baseline;
 }
-@media (min-width: 600px) {
+
+@media (max-width: 650px) {
   .bottom {
     flex-direction: row;
+  }
+  .mainText2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainTextin {
+    align-items: center;
   }
 }

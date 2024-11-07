@@ -13,15 +13,58 @@ export default function GrabOnly() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-  // Reference for the image container
-  const imageContainerRef = useRef(null);
 
-  // Function to scroll the images
-  const scrollImages = () => {
-    if (imageContainerRef.current) {
-      imageContainerRef.current.scrollLeft += 200; // Adjust the scroll distance as needed
-    }
-  };
+  const imageContainerRef = useRef(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+
+  useEffect(() => {
+    const imageContainer = imageContainerRef.current;
+
+    // Start drag
+    const startDrag = (e) => {
+      isDragging.current = true;
+      startX.current = e.pageX || e.touches[0].pageX;
+      scrollLeft.current = imageContainer.scrollLeft;
+    };
+
+    // Stop drag
+    const stopDrag = () => {
+      isDragging.current = false;
+    };
+
+    // Move drag
+    const moveDrag = (e) => {
+      if (!isDragging.current) return;
+      e.preventDefault();
+      const x = e.pageX || e.touches[0].pageX;
+      const distance = (x - startX.current) * 1.5; // Adjust the drag speed
+      imageContainer.scrollLeft = scrollLeft.current - distance;
+    };
+
+    // Mouse events
+    imageContainer.addEventListener("mousedown", startDrag);
+    imageContainer.addEventListener("mousemove", moveDrag);
+    imageContainer.addEventListener("mouseup", stopDrag);
+    imageContainer.addEventListener("mouseleave", stopDrag);
+
+    // Touch events for mobile
+    imageContainer.addEventListener("touchstart", startDrag);
+    imageContainer.addEventListener("touchmove", moveDrag);
+    imageContainer.addEventListener("touchend", stopDrag);
+
+    // Clean up listeners on unmount
+    return () => {
+      imageContainer.removeEventListener("mousedown", startDrag);
+      imageContainer.removeEventListener("mousemove", moveDrag);
+      imageContainer.removeEventListener("mouseup", stopDrag);
+      imageContainer.removeEventListener("mouseleave", stopDrag);
+      imageContainer.removeEventListener("touchstart", startDrag);
+      imageContainer.removeEventListener("touchmove", moveDrag);
+      imageContainer.removeEventListener("touchend", stopDrag);
+    };
+  }, []);
 
   return (
     <div className={styles.grabOnlyContainer}>
@@ -40,7 +83,10 @@ export default function GrabOnly() {
           <img src={influ4} alt="influ4" />
           <img src={influ5} alt="influ5" />
         </div>
-        <button onClick={scrollImages} className={styles.navButton}>
+        <button
+          onClick={() => (imageContainerRef.current.scrollLeft += 200)}
+          className={styles.navButton}
+        >
           <img src={arrow} alt="icon" className={styles.arrow} />
         </button>
       </div>

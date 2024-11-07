@@ -84,7 +84,7 @@ export default function MissionSlider() {
   return (
     <div className={styles.sliderContainer2}>
       <div className={styles.navBar}>
-        <NavBar linkColor="#fff" />
+        <NavBar linkColor="#fff" gradientBackground={false} />
       </div>
       <div
         className={styles.sliderContainer}

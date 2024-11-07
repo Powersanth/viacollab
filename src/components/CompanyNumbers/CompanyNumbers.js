@@ -35,7 +35,7 @@ export default function CompanyNumbers() {
             </div>
           </div>
         </div>
-        <div data-aos="zoom-out-left" className={styles.comapanyNImg}>
+        <div data-aos="zoom-out-right" className={styles.comapanyNImg}>
           <img
             className={styles.imageShadow}
             src={companynumberimg}

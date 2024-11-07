@@ -79,8 +79,9 @@
 .imagehover img {
   height: 150%;
   width: auto;
-  margin-top: -9vh;
+  margin-top: -8.7vh;
 }
+
 @media only screen and (min-width: 600px) and (max-width: 1069px) {
   .howWork {
     height: auto;
@@ -92,6 +93,14 @@
   }
   .howWorksymbal {
     display: none;
+  }
+  .howWorkcount,
+  .howWorkName,
+  .howWorkConten3t {
+    /* height: 20vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -105,5 +114,16 @@
   }
   .howWorksymbal {
     display: none;
+  }
+  .howWorkName,
+  .howWorkConten3t {
+    /* height: 20vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .howWorkh2 {
+    text-align: center;
   }
 }
