@@ -1,0 +1,118 @@
+.grabOnlyContainer {
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .grabOnlyText {
+    grid-area: gridText;
+  }
+  
+  
+  .grabOnlyImg {
+    grid-area: gridImg;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden; /* Hide scrollbars */
+    gap: 20px;
+    scrollbar-width: none; /* For Firefox */
+  }
+
+.grabOnlyContainer22{
+    display: flex;
+    justify-content: center;
+}
+  
+  .grabOnlyImg::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .grabOnlyText p {
+    color: #fff7ea;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+  }
+  
+  .grabOnlyImg {
+    grid-area: gridImg;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    justify-content: flex-start;
+
+    gap: 20px;
+  }
+  
+  .navButton {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-top: -10px;
+  }
+  @media only screen and (min-width: 600px) and (max-width: 1069px) {
+    .grabOnlySelector {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      gap: 10px;
+    }
+    .grabOnlyContainer {
+      height: auto;
+      padding: 0;
+    }
+    .grabOnlyText {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .grabOnlyText p {
+      color: #fff7ea;
+      font-size: 3rem;
+      font-weight: 900;
+      margin: 0;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .grabOnlyImg {
+    touch-action: none;
+    width: 100%;
+  
+  }
+  
+    .grabOnlySelector {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+    .grabOnlyText {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .grabOnlyText p {
+      color: #fff7ea;
+      font-size: 3rem;
+      font-weight: 900;
+      margin: 0;
+    }
+    .grabOnlyContainer {
+      height: auto;
+      padding: 0;
+    }
+    .grabOnlyText {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .navButton {
+      margin: 0;
+    }
+  
+  }
+  

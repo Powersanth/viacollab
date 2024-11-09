@@ -1,0 +1,115 @@
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.mainText h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin: 0;
+  color: white;
+}
+
+.subscribeText {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #b3b3b3;
+  width: 70%;
+  text-align: justify;
+}
+
+.emailContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.emailInput {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 250px;
+}
+
+.submitButton {
+  background-color: #a97cff;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 30px 0;
+}
+.linksContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.linksContainer div a {
+  display: block;
+  margin: 5px 0;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.linksContainer div a:hover {
+  color: white;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socialIcons a {
+  margin: 0 10px;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.socialIcons a:hover {
+  color: white;
+}
+
+.mainText2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.mainTextin {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+@media (max-width: 650px) {
+  .bottom {
+    flex-direction: row;
+  }
+  .mainText2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainTextin {
+    align-items: center;
+  }
+}

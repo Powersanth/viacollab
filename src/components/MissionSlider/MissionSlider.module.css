@@ -1,0 +1,174 @@
+/* MissionSlider.module.css */
+
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6b3b;
+  transition: background-color 0.8s ease-in-out;
+}
+.sliderContainer2 {
+  position: relative;
+}
+.navBar {
+  position: absolute; /* Make NavBar absolute */
+  top: 0; /* Position it at the top */
+  left: 0;
+  right: 0; /* Stretch it across the full width */
+  z-index: 10; /* Ensure it is above other elements */
+}
+
+.slidesWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.staticContent {
+  position: relative;
+  z-index: 1;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.number {
+  font-size: 4rem;
+  position: absolute;
+  top: 20%;
+  left: 20px;
+  color: white;
+}
+
+.number2 {
+  font-size: 4rem;
+  position: absolute;
+  bottom: 20%;
+  right: 20px;
+  color: white;
+}
+
+.image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  margin: 20px auto;
+  opacity: 0.7;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.image--slide-up {
+  transform: translateY(-100%); /* Slide up */
+  opacity: 0; /* Fade out */
+}
+
+.textContainer {
+  margin-top: 20px;
+}
+
+.subtitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Background Text Animation */
+.backgroundTextWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.backgroundText {
+  font-size: 12rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  white-space: nowrap;
+}
+
+.backgroundText--enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.backgroundText--enter-active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.backgroundText--exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.backgroundText--exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* Navigation Buttons */
+.navButton {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  background: transparent;
+}
+.arrow2 {
+  transform: rotate(180deg);
+}
+.navButton:first-of-type {
+  left: 10px;
+}
+
+.navButton:last-of-type {
+  right: 10px;
+}
+@media only screen and (min-width: 600px) and (max-width: 920px) {
+  .staticContent {
+    width: 90%;
+  }
+  .backgroundText {
+    font-size: 5rem;
+  }
+  .image {
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .staticContent {
+    width: 90%;
+  }
+  .backgroundText {
+    font-size: 5rem;
+  }
+  .image {
+    opacity: 0.7;
+  }
+}

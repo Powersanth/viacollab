@@ -1,0 +1,349 @@
+.circleContainerimag {
+  width: 100%;
+  position: relative;
+}
+.circleContainerimag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.teamSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.teamMember {
+  position: absolute;
+  width: 250px; /* Adjust size as needed */
+  height: 250px; /* Keep height equal to width */
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamMember img {
+  /*width: 100%;
+  height: 100%;*/
+  object-fit: cover;
+  /*border-radius: 50%;*/
+}
+
+.position1 {
+  top: 0;
+  left: 25%;
+  transform: translate(-50%, -135%);
+}
+.position2 {
+  top: 25%;
+  left: 51%;
+  transform: translate(28%, -111%);
+}
+.position3 {
+  top: 75%;
+  left: 60%;
+  transform: translate(70%, 11%);
+}
+.position4 {
+  top: 100%;
+  left: 40%;
+  transform: translate(18%, 75%);
+}
+.position5 {
+  top: 75%;
+  left: 15%;
+  transform: translate(-50%, 70%);
+}
+.position6 {
+  top: 25%;
+  left: 15%;
+  transform: translate(-100%, 0);
+}
+
+@media (max-width: 1645px) {
+  .position1 {
+    top: 0;
+    left: 25%;
+    transform: translate(-50%, -135%);
+  }
+  .position2 {
+    top: 25%;
+    left: 51%;
+    transform: translate(28%, -111%);
+  }
+  .position3 {
+    top: 75%;
+    left: 60%;
+    transform: translate(45%, -15%);
+  }
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(18%, 50%);
+  }
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(-50%, 60%);
+  }
+  .position6 {
+    top: 25%;
+    left: 0%;
+    transform: translate(-50%, -35%);
+  }
+}
+
+@media (max-width: 1495px) {
+  .position1 {
+    top: 0;
+    left: 25%;
+    transform: translate(-50%, -135%);
+  }
+  .position2 {
+    top: 25%;
+    left: 51%;
+    transform: translate(28%, -111%);
+  }
+  .position3 {
+    top: 75%;
+    left: 60%;
+    transform: translate(45%, -15%);
+  }
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(18%, 30%);
+  }
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(-50%, 40%);
+  }
+  .position6 {
+    top: 25%;
+    left: 0%;
+    transform: translate(-50%, -35%);
+  }
+  .textContaine2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1312px) {
+  .teamMember {
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 1158px) {
+  .teamMember {
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+  }
+  .teamMember img {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+  }
+  .position1 {
+    top: 0;
+    left: 25%;
+    transform: translate(-50%, -105%);
+  }
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(-50%, 30%);
+  }
+}
+
+@media (max-width: 1020px) {
+  .position1 {
+    top: 0;
+    left: 25%;
+    transform: translate(-100%, -100%);
+  }
+  .position2 {
+    top: 25%;
+    left: 51%;
+    transform: translate(-50%, -111%);
+  }
+  .position3 {
+    top: 75%;
+    left: 60%;
+    transform: translate(45%, -110%);
+  }
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(100%, 0%);
+  }
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(55%, 29%);
+  }
+  .position6 {
+    top: 25%;
+    left: 0%;
+    transform: translate(-20%, 20%);
+  }
+}
+
+@media (max-width: 912px) {
+  .circleContainerimag {
+    height: 100vh;
+  }
+  .teamSection {
+    height: 100vh;
+  }
+  .position1 {
+    top: 0;
+    left: 25%;
+    transform: translate(-100%, -100%);
+  }
+  .position2 {
+    top: 25%;
+    left: 51%;
+    transform: translate(-50%, -111%);
+  }
+  .position3 {
+    top: 75%;
+    left: 60%;
+    transform: translate(45%, -110%);
+  }
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(100%, 0%);
+  }
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(55%, 29%);
+  }
+  .position6 {
+    top: 25%;
+    left: 0%;
+    transform: translate(-20%, 20%);
+  }
+}
+
+@media (max-width: 724px) {
+  .position1 {
+    top: 0;
+    left: 25%;
+    transform: translate(-100%, -100%);
+  }
+  .position2 {
+    top: 25%;
+    left: 51%;
+    transform: translate(-50%, -111%);
+  }
+  .position3 {
+    top: 75%;
+    left: 60%;
+    transform: translate(30%, -110%);
+  }
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(80%, 0%);
+  }
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(30%, 29%);
+  }
+  .position6 {
+    top: 25%;
+    left: 0%;
+    transform: translate(-50%, 20%);
+  }
+}
+
+@media (max-width: 642px) {
+  .position1 {
+    top: 0;
+    left: 25%;
+    transform: translate(-60%, -100%);
+  }
+  .position2 {
+    top: 25%;
+    left: 51%;
+    transform: translate(0%, -111%);
+  }
+  .position3 {
+    top: 75%;
+    left: 60%;
+    transform: translate(0%, 0%);
+  }
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(40%, 81%);
+  }
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(-71%, 1%);
+  }
+  .position6 {
+    top: 25%;
+    left: 0%;
+    transform: translate(10%, 100%);
+  }
+}
+
+@media (max-width: 500px) {
+  .position1 {
+    top: 0;
+    left: 25%;
+    transform: translate(-60%, -162%);
+  }
+  .position2 {
+    top: 25%;
+    left: 51%;
+    transform: translate(0%, -175%);
+  }
+  .position3 {
+    top: 75%;
+    left: 60%;
+    transform: translate(-10%, -125%);
+  }
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(13%, -14%);
+  }
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(-60%, -122%);
+  }
+  .position6 {
+    top: 25%;
+    left: 0%;
+    transform: translate(-36%, 30%);
+  }
+  .teamMember img {
+    width: 120px;
+    height: 120px;
+  }
+}

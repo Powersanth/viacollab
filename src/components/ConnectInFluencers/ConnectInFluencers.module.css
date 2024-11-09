@@ -1,0 +1,71 @@
+.ConnectInFluencersdiv {
+  background-color: #f9f7f1;
+  height: 300px;
+  z-index: 999;
+  position: relative;
+}
+.ConnectInFluencerstext {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.ConnectInFluencerstext p {
+  display: flex;
+  font-size: 4rem;
+  margin: 0;
+}
+.ConnectInFluencerstext span img {
+  width: 40px;
+}
+.ConnectInFluencerstext2{
+  display: none;
+}
+@media (max-width: 839px) {
+  .ConnectInFluencerstext span img {
+    width: 18px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1069px) {
+  .ConnectInFluencersdiv {
+    background-color: #f9f7f1;
+    height: auto;
+    padding: 2rem;
+  }
+  .ConnectInFluencerstext p {
+    font-size: 2rem;
+  }
+  .ConnectInFluencerstext span img {
+    width: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ConnectInFluencersdiv {
+    background-color: #f9f7f1;
+    height: auto;
+    padding: 2rem;
+  }
+  .ConnectInFluencerstext p {
+    font-size: 2rem;
+  }
+  .ConnectInFluencerstext span img {
+    width: 18px;
+  }
+}
+
+@media only screen and (max-width:530px){
+  .ConnectInFluencerstext{
+    display: none;
+  }
+  .ConnectInFluencerstext2{
+    display: block;
+  }
+  .ConnectInFluencerstext2 p{
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+  }
+  
+}
