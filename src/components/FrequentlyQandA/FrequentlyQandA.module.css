@@ -72,26 +72,31 @@
 .FreqContainerContain21 .FreqQandA:nth-child(1):hover {
   background-color: #9160ef;
   transform: rotate(10deg);
+  border: 0;
 }
 
 .FreqContainerContain21 .FreqQandA:nth-child(2):hover {
   background-color: #ffac06;
   transform: rotate(-10deg);
+  border: 0;
 }
 
 .FreqContainerContain21 .FreqQandA:nth-child(3):hover {
   background-color: #49ab4f;
   transform: rotate(10deg);
+  border: 0;
 }
 
 .FreqContainerContain21 .FreqQandA:nth-child(4):hover {
   background-color: #f16643;
   transform: rotate(-10deg);
+  border: 0;
 }
 
 .FreqContainerContain21 .FreqQandA:nth-child(5):hover {
   background-color: #4da2f1;
   transform: rotate(10deg);
+  border: 0;
 }
 .FrequentlyQandAContainerText p {
   text-align: center;
