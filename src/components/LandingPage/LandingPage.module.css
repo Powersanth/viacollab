@@ -4,15 +4,9 @@
   grid-template-areas: "landText landImage";
   gap: 2rem;
   padding: 0 2rem 0 2rem;
-  background: linear-gradient(to right, #fefefe, #eaaa8a);
 }
 
 .landimages {
-  position: absolute;
-  top: 0;
-  z-index: 10; /* Ensure landimage is on top */
-  width: 100%;
-  height: 100%;
 }
 
 .textContent {
@@ -21,11 +15,37 @@
   display: grid;
   justify-items: center;
 }
+.imageIcons11 img {
+  width: 50%;
+}
+.imageIcons12 img {
+  width: 70%;
+}
+.imageIcons21 img {
+  width: 80%;
+}
+.imageIcons22 img {
+  width: 70%;
+}
+.imageIcons31 img {
+  width: 30%;
+}
+.imageIcons41 img {
+  width: 70%;
+}
+.imageIcons42 img {
+  width: 40%;
+  margin-left: 200px;
+}
+.imageIcons43 img {
+  width: 70%;
+}
 
 .textContent2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 30px;
 }
 
 .imageContent {
@@ -39,28 +59,41 @@
   font-size: 3rem;
   color: #000;
 }
-
+.textContent3 {
+  position: relative;
+}
+.textContentgradient {
+  background: linear-gradient(135deg, #cdb3ff, #ffffff);
+  filter: blur(50px);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
 .textContent p {
   font-size: 1rem;
   color: #313030;
   max-width: 450px;
   line-height: 1.6;
 }
+.textContent2 h1 {
+  margin: 0;
+}
 
 .contactButton {
-  background-color: #6a2cf2;
+  background-color: #9160ef;
   color: #fff;
   border: none;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: 30px;
   margin-top: 1.5rem;
   cursor: pointer;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 200px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .contactButtonspan {
@@ -82,14 +115,90 @@
   position: relative;
   top: 4px;
   width: 500px;
+  margin-top: 100px;
+  opacity: 0; /* Start with opacity 0 */
+  animation: fadeIn 4s ease-in-out forwards; /* Smooth fade-in animation */
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.waveSvg {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Places SVG behind the image content */
+}
+
+.wavePath {
+  stroke-dasharray: 2200; /* Approximate path length */
+  stroke-dashoffset: 2200;
+  animation: wave-animation 5s ease-in-out 1 forwards;
+}
+
+@keyframes wave-animation {
+  0% {
+    stroke-dashoffset: 2200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.imageIcons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 99;
+  top: 10%;
+  gap: 50px;
+  width: 100%;
+}
+
+.imageIcons1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.imageIcons2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.imageIcons3 {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  justify-content: flex-start;
+  margin-top: 70px;
+  margin-left: 130px;
+}
+
+.imageIcons4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
 @media only screen and (min-width: 840px) and (max-width: 997px) {
   .textContent h1 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 839px) {
+@media screen and (min-width: 699px) and (max-width: 839px) {
   .textContent h1 {
     font-size: 2rem;
   }
@@ -99,20 +208,43 @@
   .landimages {
     position: relative;
   }
-  .imageContent {
-    opacity: 0.4;
-  }
+
   .textContent {
-    position: absolute;
-    z-index: 99;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 10px;
   }
   .heroContent {
     display: flex;
     justify-content: center;
+  }
+  .heroImage {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .textContent2 {
+    padding: 0px 0px 0px 10px;
+  }
+  .textContentgradient {
+    display: none;
+  }
+  .textContent h1 {
+    font-size: 2rem;
+  }
+  .imageContent {
+    opacity: 0.4;
+  }
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .textContent {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    top: 20%;
+  }
+  .heroContent {
+    padding: 0;
   }
   .heroImage {
     width: 100%;

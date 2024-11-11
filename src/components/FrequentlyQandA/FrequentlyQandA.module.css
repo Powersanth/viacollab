@@ -2,7 +2,7 @@
   width: 100%;
 }
 .FrequentlyQandAContainer2 {
-  margin: 3rem;
+  /* margin: 3rem; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -97,51 +97,33 @@
   text-align: center;
   font-size: 3rem;
 }
-
-@media only screen and (min-width: 600px) and (max-width: 1069px) {
-  .FreqContainerContain21 {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .answerText {
-    display: block;
-    color: #000000;
-    margin: 0;
-  }
-  .questionText {
-    margin: 0;
-  }
-  .FreqQandA {
-    gap: 6px;
-    padding: 10px;
-    height: 230px;
-    width: 180px;
-  }
-  .FreqQandA h2 {
-    font-weight: 600;
-  }
+.grabOnlyTextlinepscrol {
+  display: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .FreqContainerContain21 {
+@media only screen and (max-width: 910px) {
+  .FrequentlyQandAContainerText11 {
+    overflow: auto; /* Enable scrolling */
+    -ms-overflow-style: none; /* Hide scrollbar on Internet Explorer and Edge */
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+  }
+
+  .FrequentlyQandAContainerText11::-webkit-scrollbar {
+    display: none; /* Hides scrollbar */
+  }
+  .FrequentlyQandAContainerText11 {
+    overflow: scroll;
     display: flex;
-    flex-wrap: wrap;
+    margin-left: 10px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .answerText {
-    display: block;
-    color: #000000;
-    margin: 0;
-  }
-  .questionText {
-    margin: 0;
-  }
-  .FreqQandA {
-    gap: 6px;
-    padding: 10px;
-    height: 230px;
-    width: 180px;
-  }
-  .FreqQandA h2 {
-    font-weight: 600;
+  .grabOnlyTextlinepscrol {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }

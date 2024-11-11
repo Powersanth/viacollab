@@ -83,6 +83,7 @@
 .description {
   font-size: 1rem;
   line-height: 1.6;
+  text-align: start;
 }
 
 /* Background Text Animation */
@@ -150,25 +151,118 @@
 .navButton:last-of-type {
   right: 10px;
 }
+.textContainerh33 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+.line {
+  width: 25%;
+  height: 4px;
+  background-color: #ffffff;
+  margin-bottom: -8px;
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
 @media only screen and (min-width: 600px) and (max-width: 920px) {
   .staticContent {
     width: 90%;
   }
+  .navButton {
+    top: 90%;
+  }
   .backgroundText {
-    font-size: 5rem;
+    font-size: 12rem;
   }
   .image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+    margin: 20px auto;
     opacity: 0.7;
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 493px) and (max-width: 600px) {
   .staticContent {
     width: 90%;
   }
+  .navButton {
+    top: 90%;
+  }
   .backgroundText {
-    font-size: 5rem;
+    font-size: 8rem;
   }
   .image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+    margin: 20px auto;
     opacity: 0.7;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+}
+
+@media only screen and (min-width: 435px) and (max-width: 492px) {
+  .staticContent {
+    width: 90%;
+  }
+  .navButton {
+    top: 90%;
+  }
+  .backgroundText {
+    font-size: 8rem;
+  }
+  .image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+    margin: 20px auto;
+    opacity: 0.7;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .number2 {
+    font-size: 4rem;
+    position: absolute;
+    bottom: 32%;
+    right: 20px;
+    color: white;
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 434px) {
+  .staticContent {
+    width: 90%;
+  }
+  .navButton {
+    top: 90%;
+  }
+  .backgroundText {
+    font-size: 6rem;
+  }
+  .image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+    margin: 20px auto;
+    opacity: 0.7;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .number2 {
+    font-size: 4rem;
+    position: absolute;
+    bottom: 32%;
+    right: 20px;
+    color: white;
+    width: 60px;
   }
 }

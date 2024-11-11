@@ -9,7 +9,7 @@ import icon1 from "../../assets/missionr.png";
 import icon2 from "../../assets/missionr2.png";
 import icon3 from "../../assets/rout2.png";
 import icon4 from "../../assets/missionr.png";
-import arrow from "../../assets/arrow.png";
+import arrow from "../../assets/abtarrow.png";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -18,39 +18,36 @@ import NavBar from "../NavBar/NavBar";
 const slideData = [
   {
     number: "01",
-    backgroundText: "PURPOSE",
+    backgroundText: "DREAM",
     image: abt1,
     icon: icon1,
-    subtitle: "OUR MISSION",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    backgroundColor: "#F16643",
+    subtitle: "OUR STORY",
+    description:
+      "Via Collab aims to transform influencer marketing from transactional to meaningful connections. We bridge the gap between brands and influencers, focusing on authentic impact.",
+    backgroundColor: "#998AE2",
+    color: "#D09227",
   },
   {
     number: "02",
-    backgroundText: "VISION",
+    backgroundText: "PURPOSE",
     image: abt2,
     icon: icon2,
     subtitle: "OUR VISION",
-    description: "Quis ipsum suspendisse ultrices gravida.",
+    description:
+      "We envision a world where influencer marketing thrives on trust, creativity, and authenticity. Our goal is to inspire real conversations and redefine success in marketing.",
     backgroundColor: "#F6AD2D",
+    color: "#C04B2E",
   },
   {
     number: "03",
-    backgroundText: "VALUES",
+    backgroundText: "STORY",
     image: abt3,
     icon: icon3,
-    subtitle: "OUR VALUES",
-    description: "Quis ipsum suspendisse ultrices gravida.",
-    backgroundColor: "#4cffb5",
-  },
-  {
-    number: "04",
-    backgroundText: "STRATEGY",
-    image: abt4,
-    icon: icon4,
-    subtitle: "OUR STRATEGY",
-    description: "Quis ipsum suspendisse ultrices gravida.",
-    backgroundColor: "#F6AD2D",
+    subtitle: "OUR MISSION",
+    description:
+      "We empower brands and influencers to build authentic partnerships that lead to real engagement. Our focus is on creating measurable value through genuine influence.",
+    backgroundColor: "#F16643",
+    color: "#7767C1",
   },
 ];
 
@@ -109,8 +106,15 @@ export default function MissionSlider() {
             className={styles.number2}
           />
           <div className={styles.textContainer}>
-            <h3 className={styles.subtitle}>{currentSlideData.subtitle}</h3>
-            <p className={styles.description}>{currentSlideData.description}</p>
+            <div className={styles.textContainer}>
+              <div className={styles.textContainerh33}>
+                <div className={styles.line}></div>
+                <h3 className={styles.subtitle}>{currentSlideData.subtitle}</h3>
+              </div>
+              <p className={styles.description}>
+                {currentSlideData.description}
+              </p>
+            </div>
           </div>
         </div>
 
@@ -120,7 +124,7 @@ export default function MissionSlider() {
               transitioning ? styles["backgroundText--exit"] : ""
             }`}
             style={{
-              color: prevSlideData.backgroundColor,
+              color: prevSlideData.color,
             }}
           >
             {prevSlideData.backgroundText}

@@ -14,6 +14,12 @@
   padding: 20px;
   background-color: #f9f9f9;
 }
+.comapanyNotextwpqn {
+  background-color: #ffb82a;
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+  color: #fff;
+}
 .comapanyNotextAndCount {
   grid-area: textAndCount;
   height: 100%;
@@ -31,6 +37,24 @@
   justify-content: space-between;
   width: 80%;
 }
+.imageShadow {
+  position: relative;
+}
+.imageShadowdiv {
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  left: 10%;
+  font-size: 1.3rem;
+  font-family: "inkk";
+}
+.imageShadowdiv p {
+  color: #fff;
+}
+@font-face {
+  font-family: "inkk";
+  src: url("../../assets//AreaInkTrap-Regular.otf");
+}
 
 .counter {
   margin: 20px 0;
@@ -43,7 +67,18 @@
   font-size: 1rem;
   margin: 0;
 }
-
+.counter2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.counter2 h1 {
+  font-weight: 400;
+  color: #333;
+  margin: 10px 0;
+  font-size: 4.5rem;
+}
 .counter h2 {
   font-size: 5rem;
   font-weight: 400;
@@ -51,47 +86,97 @@
   margin: 10px 0;
 }
 
-.imageShadow {
-  box-shadow: 13px 11px 7px 2px rgb(183 235 247);
-  border-radius: 48px 48px 0 48px;
-  transition: box-shadow 0.3s ease;
-}
-
-.imageShadow:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
-}
-
 .comapanyNotext p {
   font-size: 3rem;
   margin: 0;
 }
-@media only screen and (min-width: 600px) and (max-width: 1069px) {
-  .comapanyNoContainer {
-    height: auto;
-  }
-  .comapanyNotext {
-    display: none;
-  }
-  .comapanyNoSelector {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .comapanyNoCount {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
+
+@media only screen and (min-width: 1121px) and (max-width: 1230px) {
   .counter h2 {
     font-size: 3rem;
+  }
+  .counter h1 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1120px) {
+  .counter2 h2 {
+    font-size: 2rem;
+  }
+  .counter h1 {
+    font-size: 2rem;
+  }
+  .comapanyNotext p {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1099px) {
+  .counter2 h2 {
+    font-size: 2rem;
+  }
+  .counter h1 {
+    font-size: 2rem;
+  }
+  .comapanyNotext p {
+    font-size: 2rem;
+  }
+  .comapanyNImg img {
+    width: 100%;
+  }
+  .imageShadowdiv {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .counter2 h2 {
+    font-size: 2rem;
+  }
+  .counter h1 {
+    font-size: 2rem;
+  }
+  .comapanyNotext p {
+    font-size: 2rem;
+  }
+  .comapanyNImg img {
+    width: 100%;
+  }
+  .imageShadow {
+    width: 100%;
+  }
+  .imageShadowdiv {
+    font-size: 0.8rem;
   }
   .comapanyNoCount {
     width: 100%;
   }
+  .imageShadowdiv p {
+    margin: 0;
+  }
 }
+/* @media only screen and (max-width: 750px) {
+  .counter2 h2 {
+    font-size: 1.5rem;
+  }
+  .counter h1 {
+    font-size: 1.5rem;
+  }
+  .comapanyNotext p {
+    font-size: 1.5rem;
+  }
+  .comapanyNImg img {
+    width: 100%;
+  }
+  .imageShadowdiv {
+    font-size: 0.8rem;
+  }
+  .comapanyNoCount {
+    width: 100%;
+  }
+} */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 749px) {
   .comapanyNoContainer {
     height: auto;
   }
@@ -109,8 +194,14 @@
     flex-direction: column;
     gap: 10px;
   }
-  .counter h2 {
-    font-size: 3rem;
+  .counter h2 h1 {
+    font-size: 3rem !important;
+  }
+  .imageShadowdiv p {
+    font-size: 1rem;
+  }
+  .imageShadow {
+    width: 100%;
   }
   .comapanyNoCount {
     width: 100%;

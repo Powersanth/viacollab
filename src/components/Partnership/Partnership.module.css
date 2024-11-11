@@ -1,0 +1,86 @@
+.partnershipsCon {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+}
+.partnershipsCon1 {
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+.partnershipsConimg img {
+  width: 100%;
+}
+.partnershipsConimg11,
+.partnershipsConimg12,
+.partnershipsConimg13,
+.partnershipsConimg14 {
+  position: relative;
+}
+
+.partnershipsConimg21 {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.partnershipsConimg22 {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.partnershipsConimg23 {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.partnershipsConimg24 {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.partnershipsConimg241,
+.partnershipsConimg242,
+.partnershipsConimg243,
+.partnershipsConimg244 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.partnershipsConimg241 h1,
+.partnershipsConimg242 h1,
+.partnershipsConimg243 h1,
+.partnershipsConimg244 h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.partnershipsConimg241 p1,
+.partnershipsConimg242 p1,
+.partnershipsConimg243 p1,
+.partnershipsConimg244 p1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+.grabOnlyTextlinepscrol {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

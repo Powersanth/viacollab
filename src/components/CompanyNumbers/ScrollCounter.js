@@ -50,7 +50,7 @@ const ScrollCounter = ({ start, end, duration }) => {
 
   return (
     <div ref={ref}>
-      <h2>{count}+</h2>
+      <h2>{count}</h2>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import BeliveIN from "../BeliveIN/BeliveIN";
 import BrandFlow from "../BrandFlow/BrandFlow";
 import MissionSlider from "../MissionSlider/MissionSlider";
+import Partnership from "../Partnership/Partnership";
 import TeamSection from "../TeamSection/TeamSection";
 import Testimonials from "../Testimonials/Testimonials";
 
@@ -12,6 +13,7 @@ export default function About() {
       <TeamSection />
       <BrandFlow />
       <BeliveIN />
+      <Partnership />
     </div>
   );
 }

@@ -1,38 +1,51 @@
-.navbar {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: static;
-  background: linear-gradient(to right, #fefefe, #eaaa8a);
-  padding: 20px;
-}
+/* NavBar.module.css */
 
-.navbar img {
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
   margin: 0;
 }
-.closeIcon {
-  display: none;
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
 }
+
+.logo {
+  margin: 0;
+  width: 50%;
+}
+
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  justify-content: flex-end;
-  margin: 0;
+  gap: 10%;
+  justify-content: center;
+  margin-left: 200px;
 }
 
 .navLinks a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   transition: color 0.3s ease;
+  font-family: Arial, sans-serif;
 }
 
 .navLinks a:hover {
-  text-decoration: underline;
+  color: #f16643;
 }
 
 /* Burger Icon Styles */
 .burgerIcon {
-  display: none; /* Hide burger icon by default */
+  display: none;
   font-size: 30px;
   cursor: pointer;
   color: #000;
@@ -44,29 +57,24 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  color: white;
+  color: #000;
   cursor: pointer;
-  z-index: 1100; /* Ensure it is above other elements */
+  z-index: 1100;
+  display: none;
 }
 
-/* Fullscreen Menu for Mobile */
-.navLinks {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* Show the nav items as a full-screen menu when active */
+/* Full-Screen Menu for Mobile */
 .navLinks.active {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, #fefefe, #eaaa8a);
-  color: white; /* White text */
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
   z-index: 1000;
 }
 
@@ -76,39 +84,49 @@
 
 .navLinks a {
   font-size: 1.5rem;
-  color: white;
+  color: #000;
+}
+.burgerIcon1 {
+  display: none;
 }
 
-/* Media Queries for Mobile */
-@media (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .navLinks a {
-    color: #fff !important;
-  }
-  .closeIcon {
-    display: block;
-  }
-  .burgerIcon {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    font-size: 1.2rem;
+    color: #000;
   }
   .navLinks {
-    display: none; /* Hide regular nav on mobile */
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
   }
-
+}
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
   .burgerIcon {
     display: block; /* Show burger icon */
   }
 
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+
   .navLinks.active {
-    display: flex; /* Show the full-screen nav */
+    display: flex; /* Show full-screen nav when active */
+  }
+  .burgerIcon1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .closeIcon {
+    display: block;
+  }
+  .logo {
+    width: 70%;
   }
 }

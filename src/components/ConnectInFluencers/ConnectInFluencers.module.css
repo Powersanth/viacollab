@@ -1,6 +1,6 @@
 .ConnectInFluencersdiv {
   background-color: #f9f7f1;
-  height: 300px;
+  padding: 20px;
   z-index: 999;
   position: relative;
 }
@@ -17,37 +17,85 @@
   font-size: 4rem;
   margin: 0;
 }
+.ConnectInFluencerstext span {
+  width: 40px;
+  height: 40px;
+}
 .ConnectInFluencerstext span img {
   width: 40px;
+  height: 40px;
 }
-@media (max-width: 839px) {
+.spanimngp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spanimngp p {
+  margin: 0 !important;
+}
+.ConnectInFluencerstext p1 {
+  display: none;
+}
+@media screen and (min-width: 941px) and (max-width: 1294px) {
+  .ConnectInFluencerstext p {
+    font-size: 3rem;
+  }
+  .spanimngp {
+    margin-top: -5px;
+  }
   .ConnectInFluencerstext span img {
-    width: 18px;
+    width: 30px;
+    height: 30px;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 1069px) {
-  .ConnectInFluencersdiv {
-    background-color: #f9f7f1;
-    height: auto;
-    padding: 2rem;
-  }
+@media screen and (min-width: 566px) and (max-width: 940px) {
   .ConnectInFluencerstext p {
     font-size: 2rem;
   }
-  .ConnectInFluencerstext span img {
-    width: 18px;
+  .spanimngp {
+    margin-top: -5px;
   }
-}
-@media only screen and (max-width: 600px) {
-  .ConnectInFluencersdiv {
-    background-color: #f9f7f1;
-    height: auto;
-    padding: 2rem;
+  .ConnectInFluencerstext span {
+    display: none;
   }
-  .ConnectInFluencerstext p {
+  .ConnectInFluencerstext p1 {
+    display: block;
+    color: #8349f1;
     font-size: 2rem;
   }
-  .ConnectInFluencerstext span img {
-    width: 18px;
+}
+
+@media screen and (min-width: 433px) and (max-width: 565px) {
+  .ConnectInFluencerstext p {
+    font-size: 1.5rem;
+  }
+  .spanimngp {
+    margin-top: -5px;
+  }
+  .ConnectInFluencerstext span {
+    display: none;
+  }
+  .ConnectInFluencerstext p1 {
+    display: block;
+    color: #8349f1;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 432px) {
+  .ConnectInFluencerstext p {
+    font-size: 1.3rem;
+  }
+  .spanimngp {
+    margin-top: -5px;
+  }
+  .ConnectInFluencerstext span {
+    display: none;
+  }
+  .ConnectInFluencerstext p1 {
+    display: block;
+    color: #8349f1;
+    font-size: 1.3rem;
   }
 }

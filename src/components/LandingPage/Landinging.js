@@ -32,26 +32,20 @@ export default function LandingPage() {
     }
 
     const texts = [
-      "Instagram",
-      "Youtube",
-      "Facebook",
-      "JavaScript",
-      "React",
-      "Vue",
-      "NextJS",
-      "MongoDB",
-      "NodeJS",
-      "Babel",
-      "Jquery",
-      "ES6",
-      "GIT",
-      "GITHUB",
+      "Viacollab",
+      "Viacollab",
+      "Viacollab",
+      "Viacollab",
+      "Viacollab",
+      "Viacollab",
+      "Viacollab",
+      "Viacollab",
     ];
 
     const options = {
       radius: 300,
-      maxSpeed: "fast",
-      initSpeed: "fast",
+      maxSpeed: "normal",
+      initSpeed: "normal",
       keep: true,
     };
 
@@ -61,11 +55,13 @@ export default function LandingPage() {
   return (
     <div className={styles.heroContent}>
       <div className={styles.textContent}>
-        <div>
-          <h1>Lorem ipsum dolor sit amet ld diam cursus ot</h1>
+        <div className={styles.textContent2}>
+          <h1>Unite. Create. Influence – All Via Collab</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur. facilisi id euismod felis
-            platea posuere. erat cras rhoncus risus elementum nunc nunc
+            Ready to make influencer marketing as easy as a double tap? Find
+            your perfect influencer match and create collaborations that go
+            beyond likes. With tools to manage every detail, from Reels to
+            feeds, we bring you real-time insights for impactful campaigns.
           </p>
           <button className={styles.contactButton}>
             Contact us
@@ -95,6 +91,7 @@ export default function LandingPage() {
 
           {/* Add more images as needed */}
         </div>
+
         <div data-aos="fade-up-right" className={styles.landimages}>
           <img
             src={landingImage}

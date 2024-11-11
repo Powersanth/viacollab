@@ -159,9 +159,562 @@
   left: 50%;
   transform: translate(-50%, -150%); /* Position above */
 }
+@media only screen and (max-width: 1110px) {
+  .bottomWave {
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 925px) {
+  .bottomWave {
+    left: 6%;
+  }
+}
+@media only screen and (max-width: 888px) {
+  .bottomWave {
+    left: 4%;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .bottomWave {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 836px) {
+  .bottomWave {
+    left: -10%;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .bottomWave {
+    left: -30%;
+    top: 74%;
+  }
+}
 
-/* Responsive design */
-@media only screen and (min-width: 600px) and (max-width: 1062px) {
+@media only screen and (max-width: 650px) {
+  .bottomWave {
+    left: -60%;
+    top: 74%;
+  }
+}
+@media only screen and (max-width: 675px) {
+  .topWave {
+    top: -5%;
+  }
+}
+@media only screen and (max-width: 624px) {
+  .topWave {
+    top: -5%;
+    left: -20%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .bottomWave {
+    left: -90%;
+  }
+}
+@media only screen and (max-width: 448px) {
+  .bottomWave {
+    left: -500px;
+  }
+  .topWave {
+    left: -200px;
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1190px) {
+  /* Position each team member around the circle */
+  .position1 {
+    top: 0;
+    left: 60%;
+    transform: translateX(-100%);
+  }
+
+  .position2 {
+    top: 25%;
+    left: 85%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 85%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1000px) {
+  /* Position each team member around the circle */
+  .position1 {
+    top: 0;
+    left: 48%;
+    transform: translateX(-100%);
+  }
+
+  .position2 {
+    top: 25%;
+    left: 72%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 75%;
+    left: 90%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+@media only screen and (min-width: 889px) and (max-width: 849px) {
+  /* Position each team member around the circle */
+  .position1 {
+    top: 0;
+    left: 48%;
+    transform: translateX(-100%);
+  }
+
+  .position2 {
+    top: 20%;
+    left: 88%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 75%;
+    left: 90%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+@media only screen and (min-width: 791px) and (max-width: 888px) {
+  .headingPrimary {
+    font-size: 1.4rem;
+  }
+  /* Position each team member around the circle */
+  .position1 {
+    top: 0;
+    left: 48%;
+    transform: translateX(-100%);
+  }
+
+  .position2 {
+    top: 20%;
+    left: 78%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 75%;
+    left: 90%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media only screen and (min-width: 754px) and (max-width: 790px) {
+  .teamMember img {
+    width: 75%;
+    height: 75%;
+  }
+  .headingPrimary {
+    font-size: 1.4rem;
+  }
+  /* Position each team member around the circle */
+  .position1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-100%);
+  }
+
+  .position2 {
+    top: 20%;
+    left: 85%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 82%;
+    left: 94%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media only screen and (min-width: 677px) and (max-width: 753px) {
+  .teamMember img {
+    width: 75%;
+    height: 75%;
+  }
+  .headingPrimary {
+    font-size: 1.4rem;
+  }
+  /* Position each team member around the circle */
+  .position1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-100%);
+  }
+
+  .position2 {
+    top: 20%;
+    left: 95%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 82%;
+    left: 94%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+@media only screen and (min-width: 622px) and (max-width: 676px) {
+  .teamMember img {
+    width: 75%;
+    height: 75%;
+  }
+  .headingPrimary {
+    font-size: 1.4rem;
+  }
+  .teamMember img {
+    width: 65%;
+    height: 65%;
+  }
+  /* Position each team member around the circle */
+  .position1 {
+    top: 10%;
+    left: 40%;
+    transform: translateX(-100%);
+  }
+
+  .position2 {
+    top: 32%;
+    left: 75%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 72%;
+    left: 94%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 621px) {
+  .teamMember img {
+    width: 75%;
+    height: 75%;
+  }
+  .headingPrimary {
+    font-size: 1rem;
+  }
+  .teamMember img {
+    width: 55%;
+    height: 55%;
+  }
+  /* Position each team member around the circle */
+  .position1 {
+    top: 10%;
+    left: 40%;
+    transform: translateX(-100%);
+  }
+
+  .position2 {
+    top: 20%;
+    left: 100%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 80%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .teamMember img {
+    width: 75%;
+    height: 75%;
+  }
+  .headingPrimary {
+    font-size: 1rem;
+  }
+  /* Position each team member around the circle */
+  .position1 {
+    top: 10%;
+    left: 40%;
+    transform: translateX(-100%);
+  }
+  .teamMember img {
+    width: 45%;
+    height: 45%;
+  }
+
+  .position2 {
+    top: 20%;
+    left: 80%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 38%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 45%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .teamMember img {
+    width: 75%;
+    height: 75%;
+  }
+  .headingPrimary {
+    font-size: 1rem;
+  }
+  .teamMember img {
+    width: 45%;
+    height: 45%;
+  }
+  /* Position each team member around the circle */
+  .position1 {
+    top: 5%;
+    left: 48%;
+    transform: translateX(-100%);
+  }
+
+  .position2 {
+    top: 20%;
+    left: 100%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 40%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 0%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 30%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+/* @media (max-width: 631px) {
+  .teamMember img {
+    width: 75%;
+    height: 75%;
+  }
+  .headingPrimary {
+    font-size: 1.4rem;
+  }
+  .position1 {
+    top: 10%;
+    left: 40%;
+    transform: translateX(-100%);
+  }
+
+  .position2 {
+    top: 32%;
+    left: 75%;
+    transform: translate(-105%, -50%);
+  }
+
+  .position3 {
+    top: 72%;
+    left: 94%;
+    transform: translate(-100%, -50%);
+  }
+
+  .position4 {
+    top: 100%;
+    left: 40%;
+    transform: translate(0%, -90%);
+  }
+
+  .position5 {
+    top: 75%;
+    left: 15%;
+    transform: translate(0%, -20%);
+  }
+
+  .position6 {
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, 0%);
+  }
+} */
+
+/* @media only screen and (min-width: 600px) and (max-width: 1062px) {
   .topWave {
     width: 100%;
     top: 0;
@@ -205,4 +758,4 @@
     width: 100px;
     height: 100px;
   }
-}
+} */

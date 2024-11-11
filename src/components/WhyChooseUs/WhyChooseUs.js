@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import styles from "./WhyChooseUs.module.css";
 import rectangle from "../../assets/Rectangle.png";
+import curvemobi from "../../assets/curvemobi.png";
+
 import star from "../../assets/star.png";
 import pen from "../../assets/pen.png";
 import msg from "../../assets/msg.png";
@@ -14,23 +16,23 @@ export default function WhyChooseUs() {
   const features = [
     {
       image: star,
-      title: "Lorem Ipsum",
+      title: "Tech-Savvy Influencer Magic",
       description:
-        "Dolor sit amet consectetur. Habitant nisi libero turpis tortor bibendum orci quisque orci nam.",
+        "With Via Collab, you don’t just work with influencers, you team up with trendsetters who bring vibes and flair to your brand.",
       colorClass: styles.purple,
     },
     {
       image: pen,
-      title: "Lorem Ipsum",
+      title: "Real-Time Insights",
       description:
-        "Aenean facilisis in sit id sit. Fringilla imperdiet ut pretium lacus. Adipiscing consequat in nullam non nisl.",
+        "Forget guesswork. We give you real-time analytics to see how your campaigns are performing—no more waiting, just growing.",
       colorClass: styles.green,
     },
     {
       image: msg,
-      title: "Lorem Ipsum",
+      title: "Authenticity Meets Impact",
       description:
-        "Dolor sit amet consectetur. Habitant nisi libero turpis tortor bibendum orci quisque orci nam.",
+        "We connect you with influencers who actually resonate with your audience. It’s not about followers, it’s about meaningful influence and creating major lewks. Our influencers are ready to make wave and turn that buzz into a full-on trend!",
       colorClass: styles.orange,
     },
   ];
@@ -48,6 +50,17 @@ export default function WhyChooseUs() {
             <h1>US?</h1>
           </div>
         </div>
+        <div className={styles.titleContainer222}>
+          <div className={styles.titleContainer}>
+            <div data-aos="fade-right" className={styles.whyChooseImage1}>
+              <img src={curvemobi} alt="Background" />
+              <div className={styles.titleContainerrr}>
+                <h1>WHY CHOOSE</h1>
+                <h1>US?</h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={styles.features}>
           {features.map((feature, index) => (
             <div className={styles.feature} key={index}>
@@ -59,8 +72,9 @@ export default function WhyChooseUs() {
                 data-aos-duration="2000"
                 className={`${styles.text}`}
               >
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
+                <h3>
+                  {feature.title} <span>{feature.description}</span>
+                </h3>
               </div>
             </div>
           ))}

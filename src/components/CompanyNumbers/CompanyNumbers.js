@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import styles from "./CompanyNumbers.module.css";
 import ScrollCounter from "./ScrollCounter";
-import companynumberimg from "../../assets/companynumberimg.png";
+import companynumberimg from "../../assets/radiusgrap.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -16,22 +16,42 @@ export default function CompanyNumbers() {
       <div className={styles.comapanyNoSelector}>
         <div className={styles.comapanyNotextAndCount}>
           <div className={styles.comapanyNotext}>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>consectetur a sed quis</p>
-            <p>etiam semper fames eu</p>
+            <p>Here’s a sneak peek at the</p>
+            <p>
+              <span className={styles.comapanyNotextwpqn}>
+                powerhouse stats
+              </span>
+              that
+            </p>
+            <p>keep us moving</p>
           </div>
           <div className={styles.comapanyNoCount}>
             <div className={styles.counter}>
-              <p>Years of Experience</p>
-              <ScrollCounter start={0} end={12} duration={2000} />
+              <p>Influencer Reach Potential</p>
+              <div className={styles.counter2}>
+                <ScrollCounter start={0} end={12} duration={2000} />
+                <div>
+                  <h1>M+</h1>
+                </div>
+              </div>
             </div>
             <div className={styles.counter}>
-              <p>Brands Served</p>
-              <ScrollCounter start={0} end={4} duration={2000} />
+              <p>Total Influencers</p>
+              <div className={styles.counter2}>
+                <ScrollCounter start={0} end={4} duration={2000} />
+                <div>
+                  <h1>K+</h1>
+                </div>
+              </div>
             </div>
             <div className={styles.counter}>
-              <p>Successful Campaigns</p>
-              <ScrollCounter start={0} end={570} duration={2000} />
+              <p>Experienced Team </p>
+              <div className={styles.counter2}>
+                <ScrollCounter start={0} end={10} duration={2000} />
+                <div>
+                  <h1>Y+</h1>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -41,6 +61,12 @@ export default function CompanyNumbers() {
             src={companynumberimg}
             alt="companynumberimg"
           />
+          <div className={styles.imageShadowdiv}>
+            <p>
+              With Via Collab, I’m connecting with brands that truly get me—no
+              more awkward fits, just pure synergy and real impact{" "}
+            </p>
+          </div>
         </div>
       </div>
     </div>

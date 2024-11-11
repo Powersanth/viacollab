@@ -1,6 +1,5 @@
 /* WhyChooseUs.module.css */
 .whyChooseUsContainer {
-  height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -107,9 +106,72 @@
 .green {
   margin-left: 0px;
 }
+.titleContainer222 {
+  display: none;
+}
+.text span {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 1069px) {
-  .whyChooseUsContainer {
+  .titleContainer2,
+  .purple,
+  .orange,
+  .green {
+    display: none !important;
+  }
+  .titleContainer222 {
+    display: block;
+  }
+  .titleContainer :nth-child(1) {
+    border-radius: 0;
+  }
+  .titleContainer :nth-child(2) {
+    border-radius: 0;
+  }
+  .titleContainer :nth-child(3) {
+    border-radius: 0;
+  }
+
+  .whyChooseImage1 {
+    position: relative;
+  }
+  .titleContainerrr {
+    position: absolute;
+    top: 6%;
+  }
+
+  .titleContainer2 {
+    display: none;
+  }
+  .titleContainer222 {
+    display: block;
+    width: fit-content;
+  }
+  .titleContainer {
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .titleContainer h1 {
+    color: #fff;
+    font-size: 2.7rem;
+  }
+  .text span {
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+  }
+
+  .titleContainer .whyChooseUsContainer {
     height: auto;
+  }
+
+  .titleContainerrr1 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(207, 15, 15);
+    position: absolute;
+    border-radius: 100% !important;
   }
   .whyChooseUs {
     display: flex;
@@ -129,14 +191,74 @@
   .features {
     gap: 20px;
   }
+  .whyChooseImage1 img {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
-  .whyChooseUsContainer {
+  .titleContainer2,
+  .purple,
+  .orange,
+  .green {
+    display: none !important;
+  }
+  .titleContainer222 {
+    display: block;
+  }
+  .titleContainer :nth-child(1) {
+    border-radius: 0;
+  }
+  .titleContainer :nth-child(2) {
+    border-radius: 0;
+  }
+  .titleContainer :nth-child(3) {
+    border-radius: 0;
+  }
+
+  .whyChooseImage1 {
+    position: relative;
+  }
+  .titleContainerrr {
+    position: absolute;
+    top: 6%;
+  }
+
+  .titleContainer2 {
+    display: none;
+  }
+  .titleContainer222 {
+    display: block;
+    width: fit-content;
+  }
+  .titleContainer {
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .titleContainer h1 {
+    color: #fff;
+    font-size: 2.7rem;
+  }
+  .text span {
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+  }
+
+  .titleContainer .whyChooseUsContainer {
     height: auto;
+  }
+
+  .titleContainerrr1 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(207, 15, 15);
+    position: absolute;
+    border-radius: 100% !important;
   }
   .whyChooseUs {
     display: flex;
     flex-direction: column;
+    margin: 1rem;
+    padding: 0;
   }
   .purple,
   .orange {
@@ -149,5 +271,24 @@
   }
   .features {
     gap: 20px;
+  }
+  .whyChooseImage1 img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 471px) {
+  .titleContainer h1 {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .titleContainer h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 394px) {
+  .titleContainer h1 {
+    font-size: 1.8rem;
   }
 }

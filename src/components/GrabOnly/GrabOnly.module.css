@@ -1,10 +1,14 @@
 .grabOnlyContainer {
   background-color: black;
-  height: 80vh;
   padding: 3rem 0 3rem 3rem;
   overflow: hidden;
 }
 .grabOnlySelector {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.grabOnlySelector22 {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-areas: "gridText gridImg";
@@ -12,13 +16,29 @@
   align-items: center;
 }
 .grabOnlyText {
+  display: flex;
+  flex-direction: column;
+}
+.grabOnlyTextp {
   grid-area: gridText;
 }
-.grabOnlyText p {
+.grabOnlyTextp p {
   color: #fff7ea;
   font-size: 4rem;
   font-weight: 900;
   margin: 0;
+  font-family: Barlow condensed;
+  line-height: 1;
+}
+.grabOnlyTextp :nth-child(2) {
+  font-size: 8.9rem;
+  line-height: 0.7;
+  margin-left: -6px;
+}
+.grabOnlyTextp :nth-child(5) {
+  font-size: 7rem;
+  line-height: 0.8;
+  margin-left: -6px;
 }
 
 .grabOnlyImg {
@@ -28,15 +48,108 @@
   overflow: scroll;
   gap: 20px;
 }
+.grabOnlyImg::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for Webkit browsers (Chrome, Safari, etc.) */
+}
+
+.grabOnlyImg {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.activeLine {
+  stroke: #ffffff; /* White color for active line */
+  pointer-events: none; /* Prevent clicking when active */
+}
+
+.inactiveLine {
+  stroke: #888888; /* Gray color for inactive lines */
+  opacity: 0.6; /* Make it less prominent */
+  cursor: pointer;
+}
+
+.grabOnlyTextline {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  gap: 10px; /* Adjust the gap if needed */
+}
 
 .navButton {
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  margin-top: -10px;
 }
-@media only screen and (min-width: 600px) and (max-width: 1069px) {
-  .grabOnlySelector {
+.grabOnlyTextlinepscrol {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+}
+.grabOnlyTextlinepscrol p {
+  color: #fff;
+  margin: 0;
+}
+.grabOnlyTextlinepscrollines {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.grabOnlyTextlinepscrol p {
+  font-size: 1.5rem;
+}
+
+.grabOnlyTextppp {
+  display: none;
+}
+@media only screen and (min-width: 599px) and (max-width: 1069px) {
+  .grabOnlyText {
+    width: 100%;
+  }
+  .grabOnlySelector22 {
+    align-items: flex-start;
+  }
+  .grabOnlyTextline {
+    display: none;
+  }
+  .grabOnlyTextp {
+    display: none;
+  }
+  .grabOnlyTextppp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  .grabOnlyTextppp p {
+    color: #fff7ea;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+    font-family: Barlow condensed;
+    line-height: 0.8;
+  }
+  .grabOnlyTextppp :nth-child(1) {
+    font-size: 4.2rem;
+  }
+  .grabOnlyTextppp :nth-child(2) {
+    font-size: 2.3rem;
+  }
+  .grabOnlyTextppp :nth-child(3) {
+    font-size: 8rem;
+  }
+  .grabOnlyTextlinepscrol {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  .grabOnlySelector22 {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -46,14 +159,7 @@
     height: auto;
     padding: 0;
   }
-  .grabOnlyText {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  .grabOnlyText p {
+  .grabOnlyTextp p {
     color: #fff7ea;
     font-size: 3rem;
     font-weight: 900;
@@ -61,33 +167,60 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .grabOnlySelector {
+  .grabOnlySelector22 {
     display: flex;
     flex-direction: column;
     padding: 10px;
   }
-  .grabOnlyText {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
+  .grabOnlySelector22 {
+    align-items: flex-start;
   }
-  .grabOnlyText p {
+  .grabOnlyTextp {
+    display: none;
+  }
+  .grabOnlyTextppp {
+    display: block;
+    margin: 20px;
+    width: fit-content;
+  }
+  .grabOnlyTextppp p {
     color: #fff7ea;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 900;
     margin: 0;
+    font-family: Barlow condensed;
+    line-height: 0.8;
+  }
+  .grabOnlyTextppp :nth-child(1) {
+    font-size: 4.2rem;
+  }
+  .grabOnlyTextppp :nth-child(2) {
+    font-size: 2.3rem;
+  }
+  .grabOnlyTextppp :nth-child(3) {
+    font-size: 8rem;
   }
   .grabOnlyContainer {
     height: auto;
     padding: 0;
   }
+  .grabOnlyTextlinepscrollines {
+    margin-bottom: 20px;
+  }
+  .grabOnlyTextline {
+    display: none;
+  }
+
+  .grabOnlyTextlinepscrol {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
   .grabOnlyText {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
+    align-items: center;
   }
 }

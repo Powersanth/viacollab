@@ -12,7 +12,7 @@ import WhyChooseUs from "../WhyChooseUs/WhyChooseUs";
 function Home() {
   return (
     <section className="hero">
-      <NavBar linkColor="#000" gradientBackground={true} />
+      {/* <NavBar linkColor="#000" gradientBackground={true} /> */}
       <LandingPage />
       <ConnectInFluencers />
       <GrabOnly />
