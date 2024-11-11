@@ -74,6 +74,9 @@
   margin-top: 20px;
   gap: 10px; /* Adjust the gap if needed */
 }
+.grabOnlyImgup{
+  width: 100%;
+}
 
 .navButton {
   background-color: transparent;

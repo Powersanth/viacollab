@@ -41,49 +41,7 @@ export default function GrabOnly() {
     }
   }, [scrollMoved]);
 
-  useEffect(() => {
-    const imageContainer = imageContainerRef.current;
-
-    const startDrag = (e) => {
-      isDragging.current = true;
-      startX.current = e.pageX || e.touches[0].pageX;
-      scrollLeft.current = imageContainer.scrollLeft;
-    };
-
-    const stopDrag = () => {
-      isDragging.current = false;
-    };
-
-    const moveDrag = (e) => {
-      if (!isDragging.current) return;
-
-      e.preventDefault();
-      const x = e.pageX || e.touches[0].pageX;
-      const distance =
-        (x - startX.current) * (window.innerWidth < 600 ? 1 : 1.5); // Adjust drag sensitivity based on screen size
-      imageContainer.scrollLeft = scrollLeft.current - distance;
-    };
-
-    imageContainer.addEventListener("mousedown", startDrag);
-    imageContainer.addEventListener("mousemove", moveDrag);
-    imageContainer.addEventListener("mouseup", stopDrag);
-    imageContainer.addEventListener("mouseleave", stopDrag);
-    imageContainer.addEventListener("touchstart", startDrag);
-    imageContainer.addEventListener("touchmove", moveDrag);
-    imageContainer.addEventListener("touchend", stopDrag);
-    imageContainer.addEventListener("touchcancel", stopDrag);
-
-    return () => {
-      imageContainer.removeEventListener("mousedown", startDrag);
-      imageContainer.removeEventListener("mousemove", moveDrag);
-      imageContainer.removeEventListener("mouseup", stopDrag);
-      imageContainer.removeEventListener("mouseleave", stopDrag);
-      imageContainer.removeEventListener("touchstart", startDrag);
-      imageContainer.removeEventListener("touchmove", moveDrag);
-      imageContainer.removeEventListener("touchend", stopDrag);
-      imageContainer.removeEventListener("touchcancel", stopDrag);
-    };
-  }, []);
+  
 
   return (
     <div className={styles.grabOnlyContainer}>
@@ -103,12 +61,14 @@ export default function GrabOnly() {
               <p>MAGIC</p>
             </div>
           </div>
+          <div className={styles.grabOnlyImgup}>
           <div className={styles.grabOnlyImg} ref={imageContainerRef}>
             <img src={influ1} alt="influ1" />
             <img src={influ2} alt="influ2" />
             <img src={influ3} alt="influ3" />
             <img src={influ4} alt="influ4" />
             <img src={influ5} alt="influ5" />
+          </div>
           </div>
         </div>
         <div className={styles.grabOnlyTextlinepscrollines}>

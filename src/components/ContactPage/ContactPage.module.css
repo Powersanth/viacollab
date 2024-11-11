@@ -1,61 +1,68 @@
-.container {
-  padding: 20px;
-  width: 40%;
-  margin: auto;
-}
-
-.heading {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.formGroup {
-  margin-bottom: 15px;
-}
-
-.label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.input,
-.textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-.textarea {
-  resize: vertical;
-}
-
-.button {
-  padding: 10px 20px;
-  background-color: #f99b24;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #0056b3;
-}
-.containercontact {
+.contactcontainer2 button{
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #fefefe, #eaaa8a);
+  gap: 20px;
+  border: 0.4px solid #E1DED7;
+  background: #F9F7F1;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 10px;
+  color: #4A484D;
+
+}
+.contactcontainer2 p{
+  margin: 0;
 }
 
-@media screen and (max-width: 850px) {
-  .containercontact {
+.contactcontainer2{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.contactcontainer{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contactcontainer1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactcontainerh1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactcontainerh1 h1{
+  font-size: 4rem;
+}
+
+.contactcontainerh1 p{
+  font-size: 2rem;
+}
+
+
+@media screen and (max-width:530px) {
+  .contactcontainer2{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  .contactcontainerh1 h1{
+    font-size: 2rem;
+  }
+  
+  .contactcontainerh1 p{
+    font-size: 1rem;
+  }
+  
 }

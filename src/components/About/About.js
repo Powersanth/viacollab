@@ -5,6 +5,7 @@ import MissionSlider from "../MissionSlider/MissionSlider";
 import Partnership from "../Partnership/Partnership";
 import TeamSection from "../TeamSection/TeamSection";
 import Testimonials from "../Testimonials/Testimonials";
+import ContactPage from "../ContactPage/ContactPage";
 
 export default function About() {
   return (
@@ -14,6 +15,7 @@ export default function About() {
       <BrandFlow />
       <BeliveIN />
       <Partnership />
+      <ContactPage />
     </div>
   );
 }
