@@ -250,3 +250,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 390px) {
+  .textContent{
+    top: 5%;
+  }
+}

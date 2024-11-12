@@ -128,11 +128,13 @@ export default function HowItWorks() {
                   </div>
                 ) : (
                   <>
+                    <div className={styles.howWorkContent23flex}>
                     <div className={styles.howWorkContent23}>
                       <div className={styles.howWorkcount}>{res.count}</div>
                       <div className={styles.howWorkName}>{res.name}</div>
                     </div>
                     <div className={styles.howWorkConten3t}>{res.content}</div>
+                    </div>
                     <div className={styles.imagehover}>
                       <div className={styles.imagehoverimg}>
                         <img src={res.image} alt="hoverimage" />

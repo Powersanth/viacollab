@@ -50,6 +50,7 @@
 }
 .imageShadowdiv p {
   color: #fff;
+  max-width: 350px;
 }
 @font-face {
   font-family: "inkk";

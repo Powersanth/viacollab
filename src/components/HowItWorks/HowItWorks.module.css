@@ -14,7 +14,7 @@
 }
 .howWorkContent {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   width: 100%;
   align-items: center;
@@ -36,20 +36,55 @@
   display: flex;
   justify-content: center;
 }
+.howWorkh2 h1{
+  font-size: 2.3rem;
+}
 .howWorksymbal p {
   border-radius: 50%;
-  border: 1px solid gray;
+  border: 1px solid #f16643;
   padding: 5px;
   width: 20px;
   height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: gray;
   transition: background-color 0.3s ease, color 0.3s ease;
+  transform-origin: center; /* Ensure the transform is centered */
+  animation: bounce 9s ease-in-out infinite; /* Animation applied here */
 }
 
+@keyframes bounce {
+  0% {
+    transform: scale(1) translateY(0);
+    color: #f16643;
+  }
+  25% {
+    transform: scale(1.1) translateY(-5px);
+    color: #f16643;
+
+  }
+  50% {
+    transform: scale(1) translateY(0);
+    color: #f16643;
+
+  }
+  75% {
+    transform: scale(1.1) translateY(-5px);
+    color: #f16643;
+
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    color: #f16643;
+
+  }
+}
+.imagehover {
+  display: flex;
+  justify-content: flex-end;
+}
 .howWorksymbal:hover p {
   background-color: #fff !important; /* Ensure the hover color overrides */
   color: #f16643 !important; /* Optional: change text color on hover */
@@ -105,6 +140,12 @@
 .imagehovershow {
   display: none;
 }
+.howWorkContent23flex {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 100%;
+  gap: 10px;
+}
 @media screen and (min-width: 486px) and (max-width: 720px) {
   .imagehover {
     display: none;
@@ -112,7 +153,30 @@
   .howWorkContenttop.active {
     background-color: #f16643; /* Background color when the item is active */
   }
+  .howWorkContent23flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 20px;
+  }
 
+  .howWorkContent23{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-left: 0;
+  }
+  .howWorkContent23 div{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .howWorkConten3t{
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
   .howWorksymbal {
     display: flex;
     flex-direction: row; /* Ensure the symbols appear in a row */
@@ -178,7 +242,7 @@
 
   .howWorkContent {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Default grid layout */
+    grid-template-columns: 1fr 1fr; /* Default grid layout */
     justify-content: space-between;
     width: 100%;
     align-items: center;
@@ -201,6 +265,30 @@
 }
 
 @media screen and (max-width: 485px) {
+  .howWorkContent23flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 20px;
+  }
+
+  .howWorkContent23{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-left: 0;
+  }
+  .howWorkContent23 div{
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .howWorkConten3t{
+    font-size: 1rem;
+    font-weight: 500;
+  }
   .howWorkh2 {
     display: flex;
     justify-content: center;
@@ -222,8 +310,9 @@
   }
 
   .imagehovershow img {
-    margin-top: -24px;
-    width: 300px;
+    margin-top: -18px;
+    width: 250px;
+    height: 170px;
   }
   .imagehovershow {
     position: relative;
@@ -268,19 +357,20 @@
     display: flex;
     flex-direction: column;
     gap: 3px;
+    width: 140px;
   }
   .imagehover2 h1 {
-    font-size: 0.7rem;
+    font-size: 0.66rem;
     margin: 0;
   }
   .imagehover2 p {
-    font-size: 0.66rem;
+    font-size: 0.6rem;
     margin: 0;
   }
 
   .howWorkContent {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Default grid layout */
+    grid-template-columns: 1fr 1fr ; /* Default grid layout */
     justify-content: space-between;
     width: 100%;
     align-items: center;

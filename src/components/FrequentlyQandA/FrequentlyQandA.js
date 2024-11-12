@@ -21,50 +21,50 @@ export default function FrequentlyQandA() {
       image: puzzle,
       question: "What platforms does Via Collab support?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
+        "We're all about Meta vibes! Via Collab is built for Instagram and Facebook, so you can reach audiences on the platforms that matter most.",
     },
     {
       image: influencer,
-      question: "How does Viacollab match brands with influencers?",
+      question: "How does Via Collab track influencer performance?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
+        "We’re data-obsessed! Via Collab gives you all the juicy details—engagement, impressions, reach—so you know what’s working and what needs a remix.",
     },
     {
       image: prize1,
-      question: "What types of influencers are available on Viacollab?",
+      question: "Can I run multiple campaigns at once?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
+        "Oh, absolutely! Manage as many influencers and campaigns as you need—all from one easy-peasy dashboard.",
     },
     {
       image: dollarsymbol,
-      question: "How much does it cost to work with an influencer?",
+      question: "Is Via Collab good for small brands?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
+        "100%! We’re here for brands big and small, helping you find influencers that match your vibe, budget, and goals.",
     },
     {
       image: globeearth,
-      question: "How much does it cost to work with an influencer?",
+      question: "Can I pick influencers based on niche?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
+        "You got it! Search by niche, follower count, engagement rate, and more to find your perfect influencer match.",
     },
 
     {
       image: prize1,
-      question: "What types of influencers are available on Viacollab?",
+      question: "How do I know if the influencer’s audience is right for me?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
-    },
-    {
-      image: dollarsymbol,
-      question: "How much does it cost to work with an influencer?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
+        "We provide in-depth audience insights, so you’re not just guessing. Know exactly who’s tuning in!",
     },
     {
       image: globeearth,
-      question: "How much does it cost to work with an influencer?",
+      question: "Can Via Collab help me plan my campaigns?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur. Amet hendrerit feugiat rutrum suspendisse. Curabitur molestie ut volutpat sit non massa eget quam.",
+        "For sure! You can plan, schedule, and tweak campaigns using our simple dashboard, so everything runs smoothly.",
+    },
+    {
+      image: dollarsymbol,
+      question: "How do I pay influencers?",
+      answer:
+        "We make payments hassle-free—just set up your budget, and Via Collab helps handle the rest.",
     },
   ];
   return (
