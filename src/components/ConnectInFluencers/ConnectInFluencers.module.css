@@ -17,11 +17,29 @@
   font-size: 4rem;
   margin: 0;
 }
-.ConnectInFluencerstext span {
+.spanimngp {
   width: 40px;
   height: 40px;
 }
-.ConnectInFluencerstext span img {
+.spanimngp img {
+  width: 40px;
+  height: 40px;
+}
+
+.spanimngp2 {
+  width: 40px;
+  height: 40px;
+}
+.spanimngp2 img {
+  width: 40px;
+  height: 40px;
+}
+
+.spanimngp3 {
+  width: 40px;
+  height: 40px;
+}
+.spanimngp3 img {
   width: 40px;
   height: 40px;
 }
@@ -44,21 +62,46 @@
   .spanimngp {
     margin-top: -5px;
   }
-  .ConnectInFluencerstext span img {
+  .spanimngp img {
     width: 30px;
     height: 30px;
   }
 }
 @media screen and (min-width: 566px) and (max-width: 940px) {
   .ConnectInFluencerstext p {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .spanimngp {
     margin-top: -5px;
   }
-  .ConnectInFluencerstext span {
-    display: none;
+  .spanimngp img {
+    width: 16px;
+    height: 25px;
   }
+  .spanimngp {
+    width: 16px;
+    height: 25px;
+    margin-top: -6px;
+  }
+  .spanimngp2 img {
+    width: 20px;
+    height: 25px;
+  }
+  .spanimngp2 {
+    width: 20px;
+    height: 25px;
+    margin-top: -2px;
+  }
+  .spanimngp3 img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .spanimngp3 {
+    width: 35px;
+    height: 35px;
+  }
+
   .ConnectInFluencerstext p1 {
     display: block;
     color: #8349f1;
@@ -67,6 +110,36 @@
 }
 
 @media screen and (min-width: 433px) and (max-width: 565px) {
+  .spanimngp {
+    margin-top: -5px;
+  }
+  .spanimngp img {
+    width: 16px;
+    height: 25px;
+  }
+  .spanimngp {
+    width: 16px;
+    height: 25px;
+    margin-top: -6px;
+  }
+  .spanimngp2 img {
+    width: 20px;
+    height: 25px;
+  }
+  .spanimngp2 {
+    width: 20px;
+    height: 25px;
+    margin-top: -2px;
+  }
+  .spanimngp3 img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .spanimngp3 {
+    width: 35px;
+    height: 35px;
+  }
   .ConnectInFluencerstext p {
     font-size: 1.5rem;
   }
@@ -74,7 +147,6 @@
     margin-top: -5px;
   }
   .ConnectInFluencerstext span {
-    display: none;
   }
   .ConnectInFluencerstext p1 {
     display: block;
@@ -84,18 +156,47 @@
 }
 
 @media (max-width: 432px) {
+  .spanimngp {
+    margin-top: -7px;
+  }
+
+  .spanimngp img {
+    width: 10px;
+    height: 10px;
+  }
+  .spanimngp {
+    width: 10px;
+    height: 25px;
+  }
+  .spanimngp2 img {
+    width: 20px;
+    height: 25px;
+  }
+  .spanimngp2 {
+    width: 20px;
+    height: 25px;
+    margin-top: -2px;
+  }
+  .spanimngp3 img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .spanimngp3 {
+    width: 35px;
+    height: 35px;
+  }
   .ConnectInFluencerstext p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .spanimngp {
     margin-top: -5px;
   }
   .ConnectInFluencerstext span {
-    display: none;
   }
   .ConnectInFluencerstext p1 {
     display: block;
     color: #8349f1;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }

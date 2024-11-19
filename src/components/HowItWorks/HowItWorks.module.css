@@ -7,6 +7,10 @@
 .howWorkContenttop {
   height: 150px;
 }
+.howWorkcount {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.2rem !important;
+}
 .howWork2 {
   display: flex;
   flex-direction: column;
@@ -36,12 +40,12 @@
   display: flex;
   justify-content: center;
 }
-.howWorkh2 h1{
+.howWorkh2 h1 {
   font-size: 2.3rem;
 }
 .howWorksymbal p {
   border-radius: 50%;
-  border: 1px solid #f16643;
+  border: 1px solid #c6c6c6;
   padding: 5px;
   width: 20px;
   height: 20px;
@@ -58,27 +62,23 @@
 @keyframes bounce {
   0% {
     transform: scale(1) translateY(0);
-    color: #f16643;
+    color: #afabaa;
   }
   25% {
     transform: scale(1.1) translateY(-5px);
-    color: #f16643;
-
+    color: #afabaa;
   }
   50% {
     transform: scale(1) translateY(0);
-    color: #f16643;
-
+    color: #afabaa;
   }
   75% {
     transform: scale(1.1) translateY(-5px);
-    color: #f16643;
-
+    color: #afabaa;
   }
   100% {
     transform: scale(1) translateY(0);
-    color: #f16643;
-
+    color: #afabaa;
   }
 }
 .imagehover {
@@ -147,13 +147,20 @@
   gap: 10px;
 }
 @media screen and (min-width: 486px) and (max-width: 720px) {
+  .howWorkcount {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2.2rem !important;
+  }
+  .howWorkContent2 {
+    background: #f9f7f1;
+  }
   .imagehover {
     display: none;
   }
   .howWorkContenttop.active {
     background-color: #f16643; /* Background color when the item is active */
   }
-  .howWorkContent23flex{
+  .howWorkContent23flex {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -162,18 +169,18 @@
     margin-left: 20px;
   }
 
-  .howWorkContent23{
+  .howWorkContent23 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     margin-left: 0;
   }
-  .howWorkContent23 div{
+  .howWorkContent23 div {
     font-size: 1.2rem;
     font-weight: 600;
   }
-  .howWorkConten3t{
+  .howWorkConten3t {
     font-size: 1.1rem;
     font-weight: 500;
   }
@@ -185,7 +192,7 @@
   }
 
   .imagehovershow img {
-    margin-top: -52px;
+    margin-top: -43px;
   }
   .imagehovershow {
     position: relative;
@@ -242,7 +249,7 @@
 
   .howWorkContent {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Default grid layout */
+    grid-template-columns: 2fr 1fr; /* Default grid layout */
     justify-content: space-between;
     width: 100%;
     align-items: center;
@@ -265,7 +272,14 @@
 }
 
 @media screen and (max-width: 485px) {
-  .howWorkContent23flex{
+  .howWorkcount {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2.2rem !important;
+  }
+  .howWorkContent2 {
+    background: #f9f7f1;
+  }
+  .howWorkContent23flex {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -274,18 +288,18 @@
     margin-left: 20px;
   }
 
-  .howWorkContent23{
+  .howWorkContent23 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     margin-left: 0;
   }
-  .howWorkContent23 div{
+  .howWorkContent23 div {
     font-size: 1.2rem;
     font-weight: 700;
   }
-  .howWorkConten3t{
+  .howWorkConten3t {
     font-size: 1rem;
     font-weight: 500;
   }
@@ -370,7 +384,7 @@
 
   .howWorkContent {
     display: grid;
-    grid-template-columns: 1fr 1fr ; /* Default grid layout */
+    grid-template-columns: 2fr 1fr; /* Default grid layout */
     justify-content: space-between;
     width: 100%;
     align-items: center;

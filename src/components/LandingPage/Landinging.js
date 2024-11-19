@@ -103,3 +103,127 @@ export default function LandingPage() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  .textContent2 {
+    padding: 0px 0px 0px 10px;
+  }
+  .textContent p {
+    font-size: 12px;
+  }
+
+  .textContent h1 {
+    font-size: 1rem;
+  }
+  .waveSvg {
+    position: absolute;
+    top: 0;
+    left: -47%;
+    width: 148%;
+    height: 109%;
+    z-index: -1;
+  }
+
+  .heroContent {
+  }
+  .textContent {
+    /* position: absolute;
+    width: 100%;
+    z-index: 99;
+    top: 20%; */
+  }
+  .heroContent {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 5px;
+  }
+  .heroImage {
+    width: 100%;
+  }
+  .contactButton {
+    color: #fff;
+    border: none;
+    padding: 4px;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 114px;
+    font-size: 12px;
+  }
+  .contactButtonspan {
+    width: 20px;
+    height: 20px;
+  }
+  .contactButtonspan img {
+    width: 10px;
+  }
+  .textContent2 {
+    gap: 5px;
+  }
+  .imageIcons11 img {
+    width: 40%;
+  }
+  .imageIcons12 img {
+    width: 35%;
+  }
+  .imageIcons21 img {
+    width: 35%;
+  }
+  .imageIcons22 img {
+    width: 35%;
+  }
+  .imageIcons42 img {
+    margin-left: 10px;
+  }
+  .imageIcons3 {
+    margin-top: 10px;
+  }
+  .imageIcons4 {
+    margin-top: 0px;
+  }
+  .imageIcons43 img {
+    width: 55%;
+  }
+  .imageIcons42 img {
+    width: 55%;
+  }
+  .imageIcons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 99;
+    top: 20%;
+    gap: 35px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .textContent {
+    top: 5%;
+    position: relative;
+  }
+  .contactButton {
+    margin-top: 0px;
+  }
+  .textContent p {
+    margin: 0;
+  }
+}

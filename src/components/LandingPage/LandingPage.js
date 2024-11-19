@@ -21,6 +21,16 @@ export default function LandingPage() {
     Aos.init({ duration: 2000 });
   }, []);
 
+  const handleContactClick = () => {
+    const phoneNumber = "9876543210"; // Your WhatsApp number
+    const message = "Hello! I’d like to know more about your services."; // Default message
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappURL, "_blank"); // Opens WhatsApp link in a new tab
+  };
+
   return (
     <div>
       <NavBar />
@@ -36,10 +46,12 @@ export default function LandingPage() {
             <p>
               Ready to make influencer marketing as easy as a double tap? Find
               your perfect influencer match and create collaborations that go
-              beyond likes. With tools to manage every detail, from Reels to
-              feeds, we bring you real-time insights for impactful campaigns.
+              beyond likes.
             </p>
-            <button className={styles.contactButton}>
+            <button
+              className={styles.contactButton}
+              onClick={handleContactClick} // Add onClick handler
+            >
               Contact us
               <div className={styles.contactButtonspan}>
                 <img src={arrow} alt="arrow" />
@@ -56,14 +68,13 @@ export default function LandingPage() {
             />
             <svg
               className={styles.waveSvg}
-              width="848"
-              height="1024"
               viewBox="0 0 848 1024"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
             >
               <path
-                className={styles.wavePath}
+                className="wave-path"
                 opacity="0.5"
                 d="M43.9004 1024C43.901 903.513 102.927 661.61 594.693 550.662C1065.16 444.52 640.592 -330.034 319.297 -272.659"
                 stroke="url(#paint0_linear_939_733)"
@@ -86,7 +97,7 @@ export default function LandingPage() {
                 </linearGradient>
               </defs>
             </svg>
-            <dov className={styles.imageIcons}>
+            <div className={styles.imageIcons}>
               <div className={styles.imageIcons1}>
                 <div className={styles.imageIcons11}>
                   <img src={instan} alt="iconn" />
@@ -119,7 +130,98 @@ export default function LandingPage() {
                   <img src={sape} alt="iconn" />
                 </div>
               </div>
-            </dov>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.heroContentsecound}>
+        <div data-aos="fade-right" className={styles.textContent3}>
+          <div className={styles.textContentgradient}></div>
+          <h1>Unite. Create.</h1>
+          <h1>Influence – All</h1>
+          <h1>Via Collab</h1>
+        </div>
+        <div className={styles.textContent}>
+          <div className={styles.textContent2}>
+            <div className={styles.imageIcons1}>
+              <div className={styles.imageIcons31}>
+                <img src={starn} alt="iconn" />
+              </div>
+              <div className={styles.imageIcons11}>
+                <img src={instan} alt="iconn" />
+              </div>
+            </div>
+            <div className={styles.imageIcons2}>
+              <div className={styles.imageIcons41}>
+                <img src={starttn} alt="iconn" />
+              </div>
+              <div className={styles.imageIcons21}>
+                <img src={bagn} alt="iconn" />
+              </div>
+            </div>
+            <p>
+              Ready to make influencer marketing as easy as a double tap? Find
+              your perfect influencer match and create collaborations that go
+              beyond likes.
+            </p>
+            <button
+              className={styles.contactButton}
+              onClick={handleContactClick} // Add onClick handler
+            >
+              Contact us
+              <div className={styles.contactButtonspan}>
+                <img src={arrow} alt="arrow" />
+              </div>
+            </button>
+            <div className={styles.imageIcons3}>
+              <div className={styles.imageIcons12}>
+                <img src={Miken} alt="iconn" />
+              </div>
+              <div className={styles.imageIcons42}>
+                <img src={youtuben} alt="iconn" />
+              </div>
+              <div className={styles.imageIcons43}>
+                <img src={sape} alt="iconn" />
+              </div>
+            </div>
+          </div>
+          <div className={styles.imageContent}>
+            <img
+              src={landingImage}
+              alt="Excited woman jumping"
+              className={styles.heroImage}
+            />
+            {/* <svg
+            className={styles.waveSvg2}
+            viewBox="0 0 848 1024"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+          >
+            <path
+              className="wave-path"
+              opacity="0.5"
+              d="M43.9004 1024C43.901 903.513 102.927 661.61 594.693 550.662C1065.16 444.52 640.592 -330.034 319.297 -272.659"
+              stroke="url(#paint0_linear_939_733)"
+              strokeWidth="87"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_939_733"
+                x1="28.9353"
+                y1="-275.691"
+                x2="910.075"
+                y2="-229.141"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#6436BC" />
+                <stop offset="0.25" stopColor="#9160EF" />
+                <stop offset="0.564" stopColor="#F16643" />
+                <stop offset="0.802023" stopColor="#F48D14" />
+                <stop offset="1" stopColor="#F7B92D" />
+              </linearGradient>
+            </defs>
+          </svg> */}
           </div>
         </div>
       </div>

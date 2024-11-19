@@ -7,18 +7,19 @@ export default function BeliveIN() {
       <div>
         <div className={styles.heading}>
           <div className={styles.headingw}>
-            <p className={styles.smallText}>We</p> Belive
-            <p className={styles.smallText}>in</p>
+            <p className={styles.smallText}>We&nbsp;</p> <span>BELIVE</span>
+            <p className={styles.smallText}>&nbsp;in</p>
           </div>
-          <p>Authentic</p>
-          <p>Partnerships</p>
+          <p1>Authentic</p1>
+          <br />
+          <p1>Partnerships</p1>
         </div>
         <div className={styles.description}>
           <p>
-            Whether you're a brand looking to amplify your message or an
-            influencer seeking meaningful collaborations, we bring both sides
-            together to create impactful, results-driven campaigns.
+            Let's shake things up and make waves together. Bold moves, real
+            connections
           </p>
+          <p>-let's create marketing that stands out!</p>
         </div>
       </div>
     </div>

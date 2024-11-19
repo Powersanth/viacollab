@@ -279,16 +279,19 @@
 @media only screen and (max-width: 471px) {
   .titleContainer h1 {
     font-size: 2.2rem;
+    padding: 20px !important;
   }
 }
 @media only screen and (max-width: 415px) {
   .titleContainer h1 {
     font-size: 2rem;
+    padding: 20px !important;
   }
 }
 
 @media only screen and (max-width: 394px) {
   .titleContainer h1 {
     font-size: 1.8rem;
+    padding: 20px !important;
   }
 }

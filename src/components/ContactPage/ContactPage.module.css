@@ -1,68 +1,83 @@
-.contactcontainer2 button{
+.contactcontainer2 button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  border: 0.4px solid #E1DED7;
-  background: #F9F7F1;
+  border: 0.4px solid #e1ded7;
+  background: #f9f7f1;
   border-radius: 10px;
   font-size: 1.2rem;
   padding: 10px;
-  color: #4A484D;
-
+  color: #4a484d;
 }
-.contactcontainer2 p{
+.contactcontainerh11 h1 {
+  font-family: areanormalblod;
+}
+
+.contactcontainerh11 {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.contactcontainer2 p {
   margin: 0;
 }
 
-.contactcontainer2{
+.contactcontainer2 {
   display: flex;
   justify-content: center;
-  align-content: center;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
   gap: 20px;
 }
-.contactcontainer{
+.contactcontainer {
   width: 100%;
-  margin-bottom: 20px;
 }
-.contactcontainer1{
+.contactcontainer1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contactcontainerh1{
+.contactcontainerh1 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
-.contactcontainerh1 h1{
+.contactcontainerh1 h1 {
   font-size: 4rem;
 }
 
-.contactcontainerh1 p{
+.contactcontainerh1 p {
   font-size: 2rem;
 }
 
+.address {
+  background: #f9f7f1;
 
-@media screen and (max-width:530px) {
-  .contactcontainer2{
+  width: 100%;
+}
+.address span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 530px) {
+  .contactcontainer2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .contactcontainerh1 h1{
+  .contactcontainerh1 h1 {
     font-size: 2rem;
   }
-  
-  .contactcontainerh1 p{
+
+  .contactcontainerh1 p {
     font-size: 1rem;
   }
-  
 }

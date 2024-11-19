@@ -5,6 +5,7 @@
   height: 100vh;
   text-align: center;
   padding: 10px;
+  overflow: hidden;
 }
 
 .circleContainer {
@@ -159,7 +160,6 @@
   left: 50%;
   transform: translate(-50%, -150%); /* Position above */
 }
-
 
 @media only screen and (max-width: 1110px) {
   .bottomWave {

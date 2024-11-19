@@ -1,8 +1,7 @@
-/* BrandFlow.module.css */
 .container {
   background-color: black;
   color: white;
-  height: 60px;
+  height: 35px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -13,21 +12,28 @@
 }
 
 .scroll {
-  display: flex;
-  animation: scroll 15s linear infinite;
-  position: absolute;
-  justify-content: center;
-  height: 100%;
-  align-items: center;
+  display: flex; /* Arrange items in a row */
+  flex-wrap: nowrap; /* Prevent wrapping to new lines */
+  white-space: nowrap; /* Prevent text wrapping */
+  animation: scroll 15s linear infinite; /* Smooth horizontal scrolling */
+  gap: 20px; /* Add spacing between items */
 }
 
 .brand {
-  margin: 0 30px; /* Space between brands */
-  font-size: 24px;
+  display: inline-flex; /* Keep text and image in a single row */
+  align-items: center; /* Center vertically */
+  margin: 0; /* Remove extra margin */
+  font-family: "Figtree", sans-serif;
+  font-size: 1.5rem; /* Adjust size as needed */
   font-weight: bold;
+  color: #fff; /* Text color */
+  gap: 10px;
 }
-span {
-  background-color: transparent;
+
+.brand img {
+  margin-left: 8px; /* Add spacing between text and image */
+  width: 20px; /* Adjust image size */
+  height: 25px; /* Adjust image size */
 }
 /* Keyframes for scrolling effect */
 @keyframes scroll {
@@ -35,8 +41,12 @@ span {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      -50%
-    ); /* Adjust to half the width for seamless effect */
+    transform: translateX(-15%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .brand {
+    font-size: 1rem; /* Smaller text for small screens */
   }
 }

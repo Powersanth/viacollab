@@ -21,7 +21,7 @@ export default function CompanyNumbers() {
               <span className={styles.comapanyNotextwpqn}>
                 powerhouse stats
               </span>
-              that
+              &nbsp;that
             </p>
             <p>keep us moving</p>
           </div>

@@ -28,6 +28,14 @@ export default function ContactPage() {
               <p>hello@viacollab.com</p>
             </button>
           </div>
+          <div className={styles.address}>
+            <button>
+              <p>
+                <span>Address: </span>
+                Plot 306, Madhapur, Hyderabad, Talangana, 500081
+              </p>
+            </button>
+          </div>
         </div>
       </div>
     </div>

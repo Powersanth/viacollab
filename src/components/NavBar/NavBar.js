@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import logo from "../../assets/logo.png";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import whitelogo from "../../assets/whitelogo.png";
+import iconwhite from "../../assets/iconwhite.png";
+
+import menu from "../../assets/menu.png";
 
 export default function NavBar({ linkColor, gradientBackground = true }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,25 +40,37 @@ export default function NavBar({ linkColor, gradientBackground = true }) {
   };
 
   const getLinkStyle = (path) => {
-    return location.pathname === path ? { color: "#f16643" } : { color: linkColor };
+    return location.pathname === path
+      ? { color: "#f16643" }
+      : { color: linkColor };
   };
 
   const getContactLinkStyle = () => {
-    return location.pathname === "/about" ? { color: "#fff" } : { color: "#000" };
+    return location.pathname === "/about"
+      ? { color: "#fff" }
+      : { color: "#000" };
   };
 
   return (
     <nav className={styles.navbar}>
       <a href="/" className={styles.logoLink}>
-        <img src={logo} alt="viaCollab" className={styles.logo} />
+        {/* Dynamically render the logo based on the current route */}
+        {location.pathname === "/about" ? (
+          <img src={whitelogo} alt="whitelogo" className={styles.logo} />
+        ) : (
+          <img src={logo} alt="viaCollab" className={styles.logo} />
+        )}
       </a>
       <div className={styles.burgerIcon1}>
-        <AiOutlineMenu className={styles.burgerIcon} onClick={toggleNav} />
+        <div className={styles.burgerIcon} onClick={toggleNav}>
+          {location.pathname === "/about" ? (
+            <img src={iconwhite} alt="Menu" />
+          ) : (
+            <img src={menu} alt="Menu" />
+          )}
+        </div>
       </div>
       <ul className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
-        <div className={styles.burgerIcon1}>
-          <AiOutlineClose className={styles.closeIcon} onClick={toggleNav} />
-        </div>
         <li>
           <a href="/" style={getLinkStyle("/")} onClick={closeNav}>
             Home

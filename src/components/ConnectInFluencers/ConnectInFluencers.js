@@ -17,7 +17,6 @@ export default function ConnectInFluencers() {
       <div data-aos="fade-up" className={styles.ConnectInFluencerstext}>
         <p>
           Tech-p
-          <p1>o</p1>
           <span className={styles.spanimngp}>
             <img src={Ellipse} alt="s" />
             <img src={Vector22} alt="s" />

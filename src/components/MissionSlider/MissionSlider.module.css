@@ -45,6 +45,7 @@
   top: 20%;
   left: 20px;
   color: white;
+  font-family: areanormal;
 }
 
 .number2 {
@@ -57,6 +58,7 @@
 
 .image {
   width: 100%;
+  height: 200px;
   max-width: 300px;
   border-radius: 15px;
   margin: 20px auto;
@@ -70,7 +72,7 @@
 }
 
 .textContainer {
-  margin-top: 20px;
+  margin-top: 10%;
 }
 
 .subtitle {
@@ -100,8 +102,10 @@
   overflow: hidden;
 }
 
-.backgroundText {
-  font-size: 12rem;
+.backgroundText,
+.backgroundTexttext2 {
+  font-size: 18rem;
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.2);
   position: absolute;
@@ -129,8 +133,29 @@
   opacity: 0;
 }
 
+.backgroundTexttext2--enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.backgroundTexttext2--enter-active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.backgroundTexttext2--exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.backgroundTexttext2--exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
 /* Navigation Buttons */
-.navButton {
+.navButton,
+.navButton2 {
   position: absolute;
   top: 80%;
   transform: translateY(-50%);
@@ -140,9 +165,9 @@
   cursor: pointer;
   z-index: 2;
   background: transparent;
+  margin-bottom: 10px;
 }
 .arrow2 {
-  transform: rotate(180deg);
 }
 .navButton:first-of-type {
   left: 10px;
@@ -151,12 +176,22 @@
 .navButton:last-of-type {
   right: 10px;
 }
+.navButton2:first-of-type {
+  left: 10px;
+}
+
+.navButton2:last-of-type {
+  right: 10px;
+}
 .textContainerh33 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
   flex-direction: row;
+}
+.navButton2 img {
+  width: 50px;
 }
 .line {
   width: 15%;
@@ -172,14 +207,77 @@
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
+.navButton2 {
+  display: none;
+}
+.navButton3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.arrow222 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.arrow222 p {
+  margin: 0;
+  font-family: areanormalblod;
+  font-size: 1rem;
+  color: #fff;
+}
+.arrow222 p1 {
+  margin: 0;
+  font-family: areanormal;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+}
 @media only screen and (min-width: 600px) and (max-width: 920px) {
+  .navButton3 {
+    display: none;
+  }
+  .navButton2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .arrow222 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .arrow222 p {
+    margin: 0;
+    font-family: areanormalblod;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .arrow222 p1 {
+    margin: 0;
+    font-family: areanormal;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+  }
   .staticContent {
     width: 90%;
   }
   .navButton {
-    top: 90%;
+    top: 95%;
   }
-  .backgroundText {
+  .navButton2 {
+    top: 95%;
+  }
+
+  .backgroundText,
+  .backgroundTexttext2 {
     font-size: 12rem;
   }
   .image {
@@ -192,14 +290,53 @@
   }
 }
 @media only screen and (min-width: 493px) and (max-width: 600px) {
+  .backgroundText {
+    font-size: 10rem !important; /* Ensure it overrides */
+  }
+  .backgroundTexttext2 {
+    font-size: 7rem !important;
+  }
+  .navButton3 {
+    display: none;
+  }
+  .navButton2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .arrow222 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .arrow222 p {
+    margin: 0;
+    font-family: areanormalblod;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .arrow222 p1 {
+    margin: 0;
+    font-family: areanormal;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+  }
   .staticContent {
     width: 90%;
   }
   .navButton {
-    top: 90%;
+    top: 95%;
   }
-  .backgroundText {
-    font-size: 8rem;
+  .navButton2 {
+    top: 95%;
+  }
+  .backgroundText,
+  .backgroundTexttext2 {
+    font-size: 4rem;
   }
   .image {
     width: 100%;
@@ -212,14 +349,56 @@
 }
 
 @media only screen and (min-width: 435px) and (max-width: 492px) {
+  .backgroundText {
+    font-size: 10rem !important; /* Ensure it overrides */
+  }
+  .backgroundTexttext2 {
+    font-size: 7rem !important;
+  }
+  .navButton img {
+    width: 60px;
+  }
+  .navButton3 {
+    display: none;
+  }
+  .navButton2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .arrow222 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .arrow222 p {
+    margin: 0;
+    font-family: areanormalblod;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .arrow222 p1 {
+    margin: 0;
+    font-family: areanormal;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+  }
   .staticContent {
     width: 90%;
   }
   .navButton {
     top: 90%;
   }
-  .backgroundText {
-    font-size: 8rem;
+  .navButton2 {
+    top: 95%;
+  }
+  .backgroundText,
+  .backgroundTexttext2 {
+    font-size: 4rem;
   }
   .image {
     width: 100%;
@@ -240,14 +419,58 @@
 }
 
 @media only screen and (max-width: 434px) {
+  .textContainer {
+    margin-top: 40px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .navButton img {
+    width: 60px;
+  }
+  .navButton3 {
+    display: none;
+  }
+  .navButton2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .arrow222 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .arrow222 p {
+    margin: 0;
+    font-family: areanormalblod;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .arrow222 p1 {
+    margin: 0;
+    font-family: areanormal;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+  }
   .staticContent {
     width: 90%;
   }
   .navButton {
-    top: 90%;
+    top: 95%;
+  }
+  .navButton2 {
+    top: 95%;
   }
   .backgroundText {
-    font-size: 6rem;
+    font-size: 10rem; /* Ensure it overrides */
+  }
+  .backgroundTexttext2 {
+    font-size: 7rem;
   }
   .image {
     width: 100%;
@@ -264,5 +487,14 @@
     right: 20px;
     color: white;
     width: 60px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .backgroundText {
+    font-size: 9rem; /* Ensure it overrides */
+  }
+  .backgroundTexttext2 {
+    font-size: 6rem;
   }
 }

@@ -3,7 +3,7 @@
   margin: 10px;
   flex-direction: column;
 }
-.partnershipsConfiv{
+.partnershipsConfiv {
   display: flex;
   justify-content: center;
 }
@@ -12,6 +12,7 @@
   flex-direction: row;
   overflow-y: scroll;
   justify-content: flex-start;
+  gap: 8px;
 }
 .partnershipsConimg img {
   width: 100%;
@@ -33,11 +34,11 @@
 }
 .partnershipsConimg22 {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 45%;
 }
 
 .partnershipsConimg23 {
@@ -51,11 +52,11 @@
 
 .partnershipsConimg24 {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 45%;
 }
 .partnershipsConimg241,
 .partnershipsConimg242,
@@ -85,14 +86,72 @@
 .grabOnlyTextlinepscrol {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 20px;
 }
 .container {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
-.container::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+.container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.partnershipsConimg241 h1,
+.partnershipsConimg241 p1,
+.partnershipsConimg241 p {
+  color: #de4e2a;
+}
+.partnershipsConimg242 h1,
+.partnershipsConimg242 p1,
+.partnershipsConimg242 p {
+  color: #66cca1;
+}
+
+.partnershipsConimg243 h1,
+.partnershipsConimg243 p1,
+.partnershipsConimg243 p {
+  color: #ffd87f;
+}
+
+.partnershipsConimg244 h1,
+.partnershipsConimg244 p1,
+.partnershipsConimg244 p {
+  color: #f4deff;
+}
+
+@media screen and (max-width: 700px) {
+  .partnershipsConimg11 img,
+  .partnershipsConimg12 img,
+  .partnershipsConimg13 img,
+  .partnershipsConimg14 img {
+    height: 500px;
+  }
+  .partnershipsConimg241,
+  .partnershipsConimg242,
+  .partnershipsConimg243,
+  .partnershipsConimg244 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .partnershipsConimg241 h1,
+  .partnershipsConimg242 h1,
+  .partnershipsConimg243 h1,
+  .partnershipsConimg244 h1 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .partnershipsConimg241 p1,
+  .partnershipsConimg242 p1,
+  .partnershipsConimg243 p1,
+  .partnershipsConimg244 p1 {
+    font-size: 0.6rem;
+    font-weight: 600;
+    margin: 0;
+  }
 }

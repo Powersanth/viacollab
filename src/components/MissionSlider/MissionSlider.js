@@ -3,12 +3,12 @@ import styles from "./MissionSlider.module.css";
 import abt1 from "../../assets/abt11.png";
 import abt2 from "../../assets/abt22.png";
 import abt3 from "../../assets/abt33.png";
-import abt4 from "../../assets/abt11.png";
+import drag from "../../assets/drag.png";
 
 import icon1 from "../../assets/missionr.png";
 import icon2 from "../../assets/missionr2.png";
 import icon3 from "../../assets/rout2.png";
-import icon4 from "../../assets/missionr.png";
+import swioleft from "../../assets/swioleft.png";
 import arrow from "../../assets/abtarrow.png";
 
 import Aos from "aos";
@@ -91,13 +91,7 @@ export default function MissionSlider() {
           <h1 data-aos="fade-left" className={styles.number}>
             {currentSlideData.number}
           </h1>
-          <div data-aos="fade-up">
-            <img
-              src={currentSlideData.image}
-              alt={currentSlideData.subtitle}
-              className={styles.image}
-            />
-          </div>
+          <div data-aos="fade-up" className={styles.image}></div>
           <img
             data-aos="fade-up"
             data-aos-duration="3000"
@@ -120,9 +114,11 @@ export default function MissionSlider() {
 
         <div className={styles.backgroundTextWrapper}>
           <span
-            className={`${styles.backgroundText} ${
-              transitioning ? styles["backgroundText--exit"] : ""
-            }`}
+            className={`${
+              prevSlideData.backgroundText === "PURPOSE"
+                ? styles.backgroundTexttext2
+                : styles.backgroundText
+            } ${transitioning ? styles["backgroundText--exit"] : ""}`}
             style={{
               color: prevSlideData.color,
             }}
@@ -145,9 +141,20 @@ export default function MissionSlider() {
           </span>
         </div>
 
-        <button onClick={prevSlide} className={styles.navButton}>
-          <img src={arrow} alt="icon" className={styles.arrow2} />
+        <button onClick={prevSlide} className={styles.navButton2}>
+          <img src={swioleft} alt="icon" className={styles.arrow2} />
+          <div className={styles.arrow222}>
+            <p>Swip left</p>
+            <p1>To view more</p1>
+          </div>
         </button>
+        {/* <button onClick={prevSlide} className={styles.navButton3}>
+          <img src={drag} alt="icon" className={styles.arrow2} />
+          <div className={styles.arrow222}>
+            <p>Drag left</p>
+            <p1>To view more</p1>
+          </div>
+        </button> */}
         <button onClick={nextSlide} className={styles.navButton}>
           <img src={arrow} alt="icon" className={styles.arrow} />
         </button>
