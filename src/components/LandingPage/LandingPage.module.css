@@ -152,6 +152,30 @@
     stroke-dashoffset: 0;
   }
 }
+.waveSvg2 {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Places SVG behind the image content */
+}
+
+.wavePath {
+  stroke-dasharray: 2200; /* Approximate path length */
+  stroke-dashoffset: 2200;
+  animation: wave-animation 5s ease-in-out 1 forwards;
+}
+
+@keyframes wave-animation {
+  0% {
+    stroke-dashoffset: 2200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 .imageIcons {
   display: flex;
   flex-direction: column;
@@ -234,6 +258,23 @@
 }
 
 @media (max-width: 770px) {
+  .wavePath {
+    stroke: url(#paint0_linear_2017_4293); /* Gradient stroke */
+    stroke-width: 36.2465;
+    fill: none;
+    stroke-dasharray: 2200; /* Approximate path length */
+    stroke-dashoffset: 2200;
+    animation: wave-animation 5s ease-in-out 1 forwards;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      stroke-dashoffset: 2200;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
   .imageContent {
     position: relative;
     grid-area: auto;

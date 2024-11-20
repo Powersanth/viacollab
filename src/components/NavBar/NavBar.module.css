@@ -34,12 +34,17 @@
   justify-content: center;
   margin-left: 200px;
 }
+@font-face {
+  font-family: "areainktrap";
+  src: url("../../assets/areainktrap.otf");
+}
+
 
 .navLinks a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s ease;
-  font-family: Arial, sans-serif;
+  font-family: "areainktrap";
 }
 
 .navLinks a:hover {
@@ -86,7 +91,7 @@
 }
 
 .navLinks a {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #000;
 }
 .burgerIcon1 {
@@ -111,9 +116,7 @@
   .burgerIconimggg img {
     width: 60%;
   }
-  .navLinks a {
-    font-family: "areanormalblod";
-  }
+
   .navLinks.active {
     height: 45%;
     width: 32%;

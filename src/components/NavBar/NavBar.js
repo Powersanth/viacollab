@@ -41,7 +41,7 @@ export default function NavBar({ linkColor, gradientBackground = true }) {
 
   const getLinkStyle = (path) => {
     return location.pathname === path
-      ? { color: "#f16643" }
+      ? { color: "rgb(192 75 46)" }
       : { color: linkColor };
   };
 

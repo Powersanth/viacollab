@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import styles from "./TeamSection.module.css";
-import abt1 from "../../assets/team1.png";
-import abt2 from "../../assets/team2.png";
-import abt3 from "../../assets/team3.png";
-import abt4 from "../../assets/team4.png";
-import abt5 from "../../assets/team5.png";
-import abt6 from "../../assets/team6.png";
+import abt1 from "../../assets/theme01.png";
+import abt2 from "../../assets/theme02.png";
+import abt3 from "../../assets/theme03.png";
+import abt4 from "../../assets/theme04.png";
+import abt5 from "../../assets/theme05.png";
+import abt6 from "../../assets/theme06.png";
 import vc2 from "../../assets/vc1.png"; // Import top wave
 import vc1 from "../../assets/vc2.png"; // Import bottom wave
 import Aos from "aos";
@@ -76,10 +76,11 @@ const TeamSection = () => {
             key={member.id}
             className={`${styles.teamMember} ${styles[`position${member.id}`]}`}
           >
-            <img data-aos="flip-left" src={member.imgSrc} alt={member.alt} />
-            <div className={styles.nameContainer}>
-              <div className={styles.nameContainer1}>{member.name}</div>
-              <div className={styles.nameContainer2}>{member.designation}</div>
+            <img data-aos="flip-right"
+              src={member.imgSrc} alt={member.alt} />
+            <div className={styles.nameContainerHover}>
+              <div className={styles.nameContainer1Hover}>{member.name}</div>
+              <div className={styles.nameContainer2Hover}>{member.designation}</div>
             </div>
           </div>
         ))}

@@ -1,21 +1,33 @@
 import React, { useState } from "react";
 import styles from "./Footer.module.css";
-import instagram from "../../assets/instagramIcon.png";
-import twittericon from "../../assets/twittericon.png";
-import facebookicon from "../../assets/facebookicon.png";
-import youtubeicon from "../../assets/youtubeicon.png";
-import iconoo from "../../assets/iconoo.png";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  // Function to validate email format
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
 
   const handleEmailSubmit = () => {
-    if (email) {
-      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=hello@viacollab.com&su=Subscription Request&body=Please subscribe me to your updates. My email is ${email}`;
-      window.open(gmailUrl, "_blank"); // Opens Gmail in a new tab
-    } else {
-      alert("Please enter a valid email address.");
+    if (!email) {
+      setErrorMessage("Please enter an email address.");
+      return;
     }
+
+    if (!validateEmail(email)) {
+      setErrorMessage("Please enter a valid email address.");
+      return;
+    }
+
+    // Clear error message and proceed with mailto
+    setErrorMessage("");
+    const mailtoLink = `mailto:hello@viacollab.com?subject=Subscription Request&body=Please subscribe me to your updates. My email is ${email}`;
+    window.location.href = mailtoLink;
+
+    setEmail(""); // Clear the input field
   };
 
   return (
@@ -46,6 +58,9 @@ const Footer = () => {
               →
             </button>
           </div>
+          {errorMessage && (
+            <p className={styles.errorText}>{errorMessage}</p>
+          )}
         </div>
         <div className={styles.linksContainer}>
           <div>
@@ -64,22 +79,7 @@ const Footer = () => {
       </div>
       <div className={styles.bottom}>
         <div className={styles.bottom11}>
-          <img src={iconoo} />
           <p>&copy; viacollab, Inc.</p>
-        </div>
-        <div className={styles.socialIcons}>
-          <a href="/">
-            <img src={instagram} alt="Instagram" className={styles.icon} />
-          </a>
-          <a href="/">
-            <img src={twittericon} alt="Twitter" className={styles.icon} />
-          </a>
-          <a href="/">
-            <img src={facebookicon} alt="Facebook" className={styles.icon} />
-          </a>
-          <a href="/">
-            <img src={youtubeicon} alt="YouTube" className={styles.icon} />
-          </a>
         </div>
       </div>
     </footer>

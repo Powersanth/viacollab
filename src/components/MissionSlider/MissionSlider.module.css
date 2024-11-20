@@ -31,8 +31,8 @@
 .staticContent {
   position: relative;
   z-index: 1;
-  width: 60%;
-  display: flex;
+  width: 45%;
+  top: 40%;  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -40,20 +40,37 @@
 }
 
 .number {
-  font-size: 4rem;
+  font-size: 8rem;
   position: absolute;
-  top: 20%;
-  left: 20px;
+  top: -3%;
+  left: 0%;
   color: white;
   font-family: areanormal;
 }
 
 .number2 {
-  font-size: 4rem;
+  font-size: 10rem;
   position: absolute;
-  bottom: 20%;
-  right: 20px;
+  bottom: 10%;
+  right: 5%;
+  width: 10%;
+}
+
+.numberP {
+  font-size: 8rem;
+  position: absolute;
+  top: -14%;
+  left: 0%;
   color: white;
+  font-family: areanormal;
+}
+
+.numberP2 {
+  font-size: 10rem;
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  width: 10%;
 }
 
 .image {
@@ -72,7 +89,7 @@
 }
 
 .textContainer {
-  margin-top: 10%;
+  /*margin-top: 25%;*/
 }
 
 .subtitle {
@@ -102,9 +119,20 @@
   overflow: hidden;
 }
 
-.backgroundText,
+.backgroundText {
+  font-size: 30rem;
+  overflow: hidden;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  white-space: nowrap;
+}
+
 .backgroundTexttext2 {
-  font-size: 18rem;
+  font-size: 22rem;
+  overflow: hidden;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.2);
@@ -236,6 +264,65 @@
   font-weight: 500;
   color: #fff;
 }
+
+@media only screen and (min-width: 920px) and (max-width: 1120px) {
+  .backgroundText {
+  font-size: 25rem;
+  overflow: hidden;
+
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  white-space: nowrap;
+}
+.backgroundTexttext2 {
+  font-size: 16rem;
+  overflow: hidden;
+
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  white-space: nowrap;
+}
+.number {
+  font-size: 7rem;
+  position: absolute;
+  top: -3%;
+  left: 0%;
+  color: white;
+  font-family: areanormal;
+}
+
+.number2 {
+  font-size: 10rem;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  width: 10%;
+}
+.numberP {
+  font-size: 7rem;
+  position: absolute;
+  top: -26%;
+  left: 0%;
+  color: white;
+  font-family: areanormal;
+}
+
+.numberP2 {
+  font-size: 10rem;
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  width: 10%;
+}
+}
+
+
 @media only screen and (min-width: 600px) and (max-width: 920px) {
   .navButton3 {
     display: none;
@@ -247,6 +334,22 @@
     align-items: center;
     gap: 10px;
   }
+  .numberP {
+    font-size: 6rem;
+    position: absolute;
+    top: -40%;
+    left: 1%;
+    color: white;
+    font-family: areanormal;
+  }
+  
+  .numberP2 {
+    font-size: 10rem;
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    width: 15%;
+  }
   .arrow222 {
     display: flex;
     flex-direction: column;
@@ -276,9 +379,13 @@
     top: 95%;
   }
 
-  .backgroundText,
+  .backgroundText
+   {
+    font-size: 16rem;
+  }
+
   .backgroundTexttext2 {
-    font-size: 12rem;
+    font-size: 11rem;
   }
   .image {
     width: 100%;
@@ -288,13 +395,39 @@
     opacity: 0.7;
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
+  .staticContent{
+    width: 55%;
+    top: 25%;
+  }
+  .number {
+    font-size: 5rem;
+    position: absolute;
+    top: -3%;
+    left: 0%;
+    color: white;
+    font-family: areanormal;
+  }
+  
+  .number2 {
+    font-size: 9rem;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 10%;
+  }
 }
 @media only screen and (min-width: 493px) and (max-width: 600px) {
+  .staticContent{
+    width: 75%;
+    top: 25%;
+  }
   .backgroundText {
-    font-size: 10rem !important; /* Ensure it overrides */
+    font-size: 12rem !important; /* Ensure it overrides */
+    top: 25%;
   }
   .backgroundTexttext2 {
-    font-size: 7rem !important;
+    font-size: 9rem !important;
+    top: 25%;
   }
   .navButton3 {
     display: none;
@@ -326,7 +459,8 @@
     color: #fff;
   }
   .staticContent {
-    width: 90%;
+    width: 85%;
+    top: 20%;
   }
   .navButton {
     top: 95%;
@@ -334,10 +468,7 @@
   .navButton2 {
     top: 95%;
   }
-  .backgroundText,
-  .backgroundTexttext2 {
-    font-size: 4rem;
-  }
+
   .image {
     width: 100%;
     max-width: 200px;
@@ -346,14 +477,54 @@
     opacity: 0.7;
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
+  .number {
+    font-size: 5rem;
+    position: absolute;
+    top: -22%;
+    left: 0%;
+    color: white;
+    font-family: areanormal;
+  }
+  
+  .number2 {
+    font-size: 8rem;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 18%;
+  }
+
+  .numberP {
+    font-size: 5rem;
+    position: absolute;
+    top: -40%;
+    left: 1%;
+    color: white;
+    font-family: areanormal;
+  }
+  
+  .numberP2 {
+    font-size: 10rem;
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    width: 15%;
+  }
 }
 
 @media only screen and (min-width: 435px) and (max-width: 492px) {
+  .staticContent{
+    width: 75%;
+    top: 5%;
+  }
   .backgroundText {
     font-size: 10rem !important; /* Ensure it overrides */
+    top: 25%;
   }
   .backgroundTexttext2 {
     font-size: 7rem !important;
+    top: 25%;
+
   }
   .navButton img {
     width: 60px;
@@ -386,15 +557,13 @@
     font-size: 0.8rem;
     font-weight: 500;
     color: #fff;
-  }
-  .staticContent {
-    width: 90%;
+  
   }
   .navButton {
-    top: 90%;
+    top: 85%;
   }
   .navButton2 {
-    top: 95%;
+    top: 85%;
   }
   .backgroundText,
   .backgroundTexttext2 {
@@ -408,13 +577,38 @@
     opacity: 0.7;
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
-  .number2 {
+
+  .number {
     font-size: 4rem;
     position: absolute;
-    bottom: 32%;
-    right: 20px;
+    top: -22%;
+    left: 0%;
     color: white;
-    width: 60px;
+    font-family: areanormal;
+  }
+  
+  .number2 {
+    font-size: 8rem;
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    width: 18%;
+  }
+  .numberP {
+    font-size: 4rem;
+    position: absolute;
+    top: -40%;
+    left: 1%;
+    color: white;
+    font-family: areanormal;
+  }
+  
+  .numberP2 {
+    font-size: 10rem;
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    width: 15%;
   }
 }
 
@@ -457,20 +651,25 @@
     font-weight: 500;
     color: #fff;
   }
-  .staticContent {
-    width: 90%;
+  .staticContent{
+    width: 75%;
+    top: 5%;
   }
   .navButton {
-    top: 95%;
+    top: 85%;
   }
   .navButton2 {
-    top: 95%;
+    top: 85%;
   }
   .backgroundText {
-    font-size: 10rem; /* Ensure it overrides */
+    font-size: 9rem; /* Ensure it overrides */
+    top: 25%;
+
   }
   .backgroundTexttext2 {
     font-size: 7rem;
+    top: 25%;
+
   }
   .image {
     width: 100%;
@@ -480,21 +679,96 @@
     opacity: 0.7;
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
-  .number2 {
+  .number {
     font-size: 4rem;
     position: absolute;
-    bottom: 32%;
-    right: 20px;
+    top: -22%;
+    left: 0%;
     color: white;
-    width: 60px;
+    font-family: areanormal;
+  }
+  
+  .number2 {
+    font-size: 8rem;
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    width: 18%;
+  }
+  .numberP {
+    font-size: 4rem;
+    position: absolute;
+    top: -40%;
+    left: 1%;
+    color: white;
+    font-family: areanormal;
+  }
+  
+  .numberP2 {
+    font-size: 10rem;
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    width: 15%;
   }
 }
 
 @media screen and (max-width: 361px) {
+  .navButton {
+    top: 85%;
+  }
+  .navButton2 {
+    top: 85%;
+  }
+  .backgroundText {
+    font-size: 9rem; /* Ensure it overrides */
+    top: 25%;
+
+  }
+  .backgroundTexttext2 {
+    font-size: 7rem;
+    top: 25%;
+
+  }
   .backgroundText {
     font-size: 9rem; /* Ensure it overrides */
   }
   .backgroundTexttext2 {
     font-size: 6rem;
+  }
+  .number {
+    font-size: 4rem;
+    position: absolute;
+    top: -22%;
+    left: 0%;
+    color: white;
+    font-family: areanormal;
+  }
+  
+  .number2 {
+    font-size: 8rem;
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    width: 18%;
+  }
+  .numberP {
+    font-size: 4rem;
+    position: absolute;
+    top: -40%;
+    left: 1%;
+    color: white;
+    font-family: areanormal;
+  }
+  
+  .numberP2 {
+    font-size: 10rem;
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    width: 15%;
+  }
+  .staticContent{
+    top: 5%;
   }
 }

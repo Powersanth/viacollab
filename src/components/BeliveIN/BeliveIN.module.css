@@ -69,7 +69,7 @@
   align-items: center;
 }
 .description p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .heading {
@@ -78,6 +78,9 @@
 }
 .smallText {
   font-size: 3rem;
+}
+.headingw p{
+  font-size: 4rem;
 }
 @media only screen and (min-width: 600px) and (max-width: 920px) {
   .container {

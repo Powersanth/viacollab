@@ -83,19 +83,13 @@
   font-weight: 600;
   margin: 0;
 }
-.grabOnlyTextlinepscrol {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
-}
+
 .container {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none !important; /* Internet Explorer 10+ */
+  scrollbar-width: none !important; /* Firefox */
 }
 .container::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none !important; /* Safari and Chrome */
 }
 
 .partnershipsConimg241 h1,
@@ -119,6 +113,19 @@
 .partnershipsConimg244 p1,
 .partnershipsConimg244 p {
   color: #f4deff;
+}
+.grabOnlyTextlinepscrol {
+  display: none;
+}
+
+@media screen and (max-width: 1615px) {
+  .grabOnlyTextlinepscrol {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 700px) {

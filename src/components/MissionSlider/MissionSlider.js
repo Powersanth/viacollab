@@ -88,17 +88,6 @@ export default function MissionSlider() {
         style={{ backgroundColor: currentSlideData.backgroundColor }}
       >
         <div className={styles.staticContent}>
-          <h1 data-aos="fade-left" className={styles.number}>
-            {currentSlideData.number}
-          </h1>
-          <div data-aos="fade-up" className={styles.image}></div>
-          <img
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            src={currentSlideData.icon}
-            alt="icon"
-            className={styles.number2}
-          />
           <div className={styles.textContainer}>
             <div className={styles.textContainer}>
               <div className={styles.textContainerh33}>
@@ -114,24 +103,34 @@ export default function MissionSlider() {
 
         <div className={styles.backgroundTextWrapper}>
           <span
-            className={`${
-              prevSlideData.backgroundText === "PURPOSE"
-                ? styles.backgroundTexttext2
-                : styles.backgroundText
-            } ${transitioning ? styles["backgroundText--exit"] : ""}`}
+            className={`${prevSlideData.backgroundText === "PURPOSE"
+              ? styles.backgroundTexttext2
+              : styles.backgroundText
+              } ${transitioning ? styles["backgroundText--exit"] : ""}`}
             style={{
               color: prevSlideData.color,
             }}
           >
             {prevSlideData.backgroundText}
+            <div>
+              <h1 data-aos="fade-left" className={`${prevSlideData.backgroundText === "PURPOSE" ? styles.numberP : styles.number}`}>
+                {currentSlideData.number}
+              </h1>
+              <img
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                src={currentSlideData.icon}
+                alt="icon"
+                className={`${prevSlideData.backgroundText === "PURPOSE" ? styles.numberP2 : styles.number2}`}
+              />
+            </div>
           </span>
 
           <span
-            className={`${styles.backgroundText} ${
-              transitioning
-                ? styles["backgroundText--enter-active"]
-                : styles["backgroundText--enter"]
-            }`}
+            className={`${styles.backgroundText} ${transitioning
+              ? styles["backgroundText--enter-active"]
+              : styles["backgroundText--enter"]
+              }`}
             onTransitionEnd={handleTransitionEnd}
             style={{
               color: currentSlideData.backgroundColor,

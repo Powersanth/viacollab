@@ -191,37 +191,20 @@ export default function LandingPage() {
               alt="Excited woman jumping"
               className={styles.heroImage}
             />
-            {/* <svg
-            className={styles.waveSvg2}
-            viewBox="0 0 848 1024"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-          >
-            <path
-              className="wave-path"
-              opacity="0.5"
-              d="M43.9004 1024C43.901 903.513 102.927 661.61 594.693 550.662C1065.16 444.52 640.592 -330.034 319.297 -272.659"
-              stroke="url(#paint0_linear_939_733)"
-              strokeWidth="87"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_939_733"
-                x1="28.9353"
-                y1="-275.691"
-                x2="910.075"
-                y2="-229.141"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#6436BC" />
-                <stop offset="0.25" stopColor="#9160EF" />
-                <stop offset="0.564" stopColor="#F16643" />
-                <stop offset="0.802023" stopColor="#F48D14" />
-                <stop offset="1" stopColor="#F7B92D" />
-              </linearGradient>
-            </defs>
-          </svg> */}
+            <svg className={styles.waveSvg2}
+              width="561" height="354" viewBox="0 0 561 354" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5" d="M0.795593 335.164C50.9935 335.164 151.777 310.572 198.001 105.689C242.222 -90.3205 564.922 86.5665 541.018 220.427" stroke="url(#paint0_linear_2017_4293)" stroke-width="36.2465" />
+              <defs>
+                <linearGradient id="paint0_linear_2017_4293" x1="542.281" y1="341.399" x2="522.887" y2="-25.707" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#6436BC" />
+                  <stop offset="0.25" stop-color="#9160EF" />
+                  <stop offset="0.564" stop-color="#F16643" />
+                  <stop offset="0.802023" stop-color="#F48D14" />
+                  <stop offset="1" stop-color="#F7B92D" />
+                </linearGradient>
+              </defs>
+            </svg>
+
           </div>
         </div>
       </div>
